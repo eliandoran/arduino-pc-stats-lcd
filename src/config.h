@@ -1,0 +1,1 @@
+#define SERIAL_BAUDRATE 9600
