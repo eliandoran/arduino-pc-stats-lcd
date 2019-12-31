@@ -8,6 +8,7 @@ DateTime RTC_GetTime() {
 }
 
 void RTC_SetTime(DateTime time) {
+    Serial.println("[RTC] Adjusting time");
     rtc.adjust(time);
 }
 
@@ -23,16 +24,23 @@ void RTC_Initialize() {
         Serial.println("[RTC] Unable to initialize.");
     }
 
+    bool adjustTime = false;
+
     if (rtc.isrunning()) {
-        Serial.println("[RTC] Is not running.");
-    } else {
         Serial.println("[RTC] Is running.");
+    } else {
+        Serial.println("[RTC] Is not running.");
+        adjustTime = true;
     }
 
     if (RTC_IsTimeSet()) {
         Serial.println("[RTC] Time is set.");
     } else {        
         Serial.println("[RTC] Time is not set.");
+        adjustTime = true;        
+    }
+
+    if (adjustTime) {
         RTC_SetTime(RTC_MINIMAL_TIMESTAMP);
     }
 }
