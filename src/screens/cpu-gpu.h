@@ -10,6 +10,8 @@
 #define ICON_CELSIUS_STR "\x2"
 
 void Screen_CPU_GPU() {
+    randomSeed(millis());
+
     LCD_SetCustomCharacter(ICON_CPU, CHAR_CPU);
     LCD_SetCustomCharacter(ICON_GPU, CHAR_GPU);
     LCD_SetCustomCharacter(ICON_CELSIUS, CHAR_CELSIUS_DEGREE);
@@ -20,7 +22,11 @@ void Screen_CPU_GPU() {
     LCD_PrintRight("32" ICON_CELSIUS_STR, 0);
     LCD_PrintRight("42" ICON_CELSIUS_STR, 1);
     
-    HProgress_Initialize();
-    HProgress_Draw(2, 0, 10, HProgress_GetValue(0, 50, 100));
-    HProgress_Draw(2, 1, 10, HProgress_GetValue(0, 100, 100));
+    HProgress_Initialize();        
+
+    while (true) {
+        HProgress_Draw(2, 0, 10, HProgress_GetValue(0, rand(), RAND_MAX));
+        HProgress_Draw(2, 1, 10, HProgress_GetValue(0, rand(), RAND_MAX));
+        delay(16);
+    }
 }
