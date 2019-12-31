@@ -11,11 +11,14 @@
 #include "src/screens/idle.h"
 #include "src/screens/cpu-gpu.h"
 
+#include "src/ui/hprogress.h"
+
 void setup()
 {
     Trace_Initialize();    
     RTC_Initialize();
     LCD_Initialize();
+    HProgress_Initialize();    
 }
 
 void loop()

@@ -14,6 +14,9 @@
 #define LCD_COLUMNS 16
 #define LCD_ROWS 2
 
+#define LCD_CHAR_WIDTH 5
+#define LCD_CHAR_HEIGHT 8
+
 /*
  * Time format
  */
