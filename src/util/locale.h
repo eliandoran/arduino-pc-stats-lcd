@@ -1,6 +1,6 @@
 #include "../rtc.h"
 
-String DateTime_FormatTime(DateTime dateTime) {
+String Locale_FormatTime(DateTime dateTime) {
     String output;
     uint8_t hour = dateTime.hour();
     uint8_t minute = dateTime.minute();
@@ -20,7 +20,7 @@ String DateTime_FormatTime(DateTime dateTime) {
     return output;
 }
 
-String DateTime_FormatDate(DateTime dateTime) {
+String Locale_FormatDate(DateTime dateTime) {
     String output;
     output += DAYS_OF_THE_WEEK[dateTime.dayOfTheWeek()];
     output += ", ";
