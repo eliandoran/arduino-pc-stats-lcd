@@ -9,3 +9,15 @@ String DateTime_FormatTime(DateTime dateTime) {
     output += dateTime.second();
     return output;
 }
+
+String DateTime_FormatDate(DateTime dateTime) {
+    String output;
+    output += dateTime.dayOfTheWeek();
+    output += ", ";
+    output += dateTime.month();
+    output += ' ';
+    output += dateTime.day();    
+    output += " @ ";
+    output += dateTime.second();
+    return output;
+}
