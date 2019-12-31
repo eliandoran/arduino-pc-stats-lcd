@@ -1,3 +1,5 @@
+#pragma once
+
 #define SERIAL_BAUDRATE 9600
 
 /*

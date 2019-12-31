@@ -1,5 +1,8 @@
+#pragma once
+
 #include <RTClib.h>
 #include "config.h"
+#include "trace.h"
 
 RTC_DS1307 rtc;
 
@@ -8,7 +11,7 @@ DateTime RTC_GetTime() {
 }
 
 void RTC_SetTime(DateTime time) {
-    Serial.println("[RTC] Adjusting time");
+    TRACE("[RTC] Adjusting time");
     rtc.adjust(time);
 }
 
@@ -19,24 +22,24 @@ bool RTC_IsTimeSet() {
 
 void RTC_Initialize() {
     if (rtc.begin()) {
-        Serial.println("[RTC] Initialized successfully.");
+        TRACE("[RTC] Initialized successfully.");
     } else {
-        Serial.println("[RTC] Unable to initialize.");
+        TRACE("[RTC] Unable to initialize.");
     }
 
     bool adjustTime = false;
 
     if (rtc.isrunning()) {
-        Serial.println("[RTC] Is running.");
+        TRACE("[RTC] Is running.");
     } else {
-        Serial.println("[RTC] Is not running.");
+        TRACE("[RTC] Is not running.");
         adjustTime = true;
     }
 
     if (RTC_IsTimeSet()) {
-        Serial.println("[RTC] Time is set.");
+        TRACE("[RTC] Time is set.");
     } else {        
-        Serial.println("[RTC] Time is not set.");
+        TRACE("[RTC] Time is not set.");
         adjustTime = true;        
     }
 

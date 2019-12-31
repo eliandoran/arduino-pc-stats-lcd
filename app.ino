@@ -5,19 +5,18 @@
 #include <RTClib.h>
 
 #include "src/config.h"
+#include "src/trace.h"
 #include "src/rtc.h"
 
 LiquidCrystal_I2C lcd(LCD_ADDRESS, LCD_COLUMNS, LCD_ROWS);
 
 void setup()
 {
-    Serial.begin(SERIAL_BAUDRATE);
-    Serial.println("Hello world");
+    Trace_Initialize();
 
     lcd.init();
     lcd.backlight();
-    lcd.clear();
-    lcd.print("Hello world.");
+    lcd.clear();    
 
     RTC_Initialize();
 }
