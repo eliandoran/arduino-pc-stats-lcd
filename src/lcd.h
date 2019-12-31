@@ -39,12 +39,12 @@ void LCD_Clear() {
     lcd.clear();
 }
 
-void LCD_ClearLine(int y) {
+void LCD_ClearLine(int x, int y, int width) {
     String emptyLine;
-    for (int i=0; i<LCD_COLUMNS; i++) {
+    for (int i=0; i<width; i++) {
         emptyLine += ' ';
     }
-    LCD_Print(emptyLine.c_str(), 0, y);
+    LCD_Print(emptyLine.c_str(), x, y);
 }
 
 void LCD_SetCustomCharacter(byte charIndex, uint8_t charData[]) {

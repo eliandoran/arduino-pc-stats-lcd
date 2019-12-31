@@ -29,6 +29,7 @@ void HProgress_Initialize() {
 
 void HProgress_Draw(int x, int y, int width, byte value) {
     int numPixels = (((float)value / 100) * width * LCD_CHAR_WIDTH);    
+    int startX = x;
     
     // Draw full segments
     int numFullSegments = (numPixels / LCD_CHAR_WIDTH);
@@ -43,6 +44,10 @@ void HProgress_Draw(int x, int y, int width, byte value) {
         int index = (numPartialSegments / HPROGRESS_NUM_INTERMEDIATE_STEPS);
         LCD_DrawCustomCharacter(HPROGRESS_INTERMEDIATE_STEPS[index], x, y);
     }
+
+    // Fill the remainder with empty space (to clean up previous values).
+    int emptySegments = (width - (x - startX));
+    LCD_ClearLine(x, y, emptySegments);
 }
 
 byte HProgress_GetValue(int min, int current, int max) {
