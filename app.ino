@@ -8,6 +8,8 @@
 #include "src/rtc.h"
 #include "src/lcd.h"
 
+#include "src/screens/idle.h"
+
 void setup()
 {
     Trace_Initialize();    
@@ -17,20 +19,5 @@ void setup()
 
 void loop()
 {
-	DateTime time = RTC_GetTime();
-
-    Serial.print(time.day());
-    Serial.print("/");
-    Serial.print(time.month());
-    Serial.print("/");
-    Serial.print(time.year());
-    Serial.print(" ");
-
-    Serial.print(time.hour());
-    Serial.print(":");
-    Serial.print(time.minute());
-    Serial.print(":");
-    Serial.print(time.second());
-    Serial.println();
-    delay(1000);
+	Screen_Idle();
 }
