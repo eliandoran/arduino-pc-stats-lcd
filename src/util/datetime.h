@@ -2,11 +2,21 @@
 
 String DateTime_FormatTime(DateTime dateTime) {
     String output;
-    output += dateTime.hour();
+    uint8_t hour = dateTime.hour();
+    uint8_t minute = dateTime.minute();
+    uint8_t second = dateTime.second();
+
+    if (hour < 10) output += '0';
+    output += hour;
     output += TIME_SEPARATOR;
-    output += dateTime.minute();
+
+    if (minute < 10) output += '0';
+    output += minute;
     output += TIME_SEPARATOR;
-    output += dateTime.second();
+
+    if (second < 10) output += '0';    
+    output += second;
+
     return output;
 }
 
