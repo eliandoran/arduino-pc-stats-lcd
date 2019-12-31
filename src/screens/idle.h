@@ -8,4 +8,6 @@ void Screen_Idle() {
 
     LCD_PrintCentered(timeFormatted.c_str(), 0);
     LCD_PrintCentered("Date goes here", 1);
+
+    delay(1000);
 }
