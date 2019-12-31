@@ -13,3 +13,8 @@
 #define LCD_ADDRESS 0x3F
 #define LCD_COLUMNS 16
 #define LCD_ROWS 2
+
+/*
+ * Time format
+ */
+#define TIME_SEPARATOR ':'
