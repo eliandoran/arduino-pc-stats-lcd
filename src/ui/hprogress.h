@@ -11,10 +11,10 @@
 #define INDEX_HPROGRESS_100 3
 
 const byte HPROGRESS_INTERMEDIATE_STEPS[] = {
-    INDEX_HPROGRESS_20,
-    INDEX_HPROGRESS_40,
+    INDEX_HPROGRESS_80,
     INDEX_HPROGRESS_60,
-    INDEX_HPROGRESS_80
+    INDEX_HPROGRESS_40,
+    INDEX_HPROGRESS_20
 };
 
 const byte HPROGRESS_NUM_INTERMEDIATE_STEPS = (sizeof(HPROGRESS_INTERMEDIATE_STEPS) / sizeof(HPROGRESS_INTERMEDIATE_STEPS[0]));
@@ -41,8 +41,9 @@ void HProgress_Draw(int x, int y, int width, byte value) {
     // Draw last partial segment.
     int numPartialSegments = (numPixels % LCD_CHAR_WIDTH);
     if (numPartialSegments > 0) {
-        int index = (numPartialSegments / HPROGRESS_NUM_INTERMEDIATE_STEPS);
+        int index = ((HPROGRESS_NUM_INTERMEDIATE_STEPS - 1) - (numPartialSegments - 1));
         LCD_DrawCustomCharacter(HPROGRESS_INTERMEDIATE_STEPS[index], x, y);
+        x++;
     }
 
     // Fill the remainder with empty space (to clean up previous values).

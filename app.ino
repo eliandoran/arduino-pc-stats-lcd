@@ -17,8 +17,7 @@ void setup()
 {
     Trace_Initialize();    
     RTC_Initialize();
-    LCD_Initialize();
-    HProgress_Initialize();    
+    LCD_Initialize();      
 }
 
 void loop()
