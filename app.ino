@@ -31,7 +31,7 @@ void loop()
     Serial.print(time.month());
     Serial.print("/");
     Serial.print(time.year());
-    Serial.println();
+    Serial.print(" ");
 
     Serial.print(time.hour());
     Serial.print(":");
