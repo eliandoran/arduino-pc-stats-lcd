@@ -28,7 +28,7 @@ void HProgress_Initialize() {
 }
 
 void HProgress_Draw(int x, int y, int width, byte value) {
-    int numPixels = (((float)value / 255) * width * LCD_CHAR_WIDTH);    
+    int numPixels = (((float)value / 100) * width * LCD_CHAR_WIDTH);    
     
     // Draw full segments
     int numFullSegments = (numPixels / LCD_CHAR_WIDTH);
@@ -46,5 +46,5 @@ void HProgress_Draw(int x, int y, int width, byte value) {
 }
 
 byte HProgress_GetValue(int min, int current, int max) {
-    return ((float)(current - min) / (max - min)) * 255;
+    return ((float)(current - min) / (max - min)) * 100;
 }
