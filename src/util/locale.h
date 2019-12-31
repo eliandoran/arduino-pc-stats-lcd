@@ -1,3 +1,5 @@
+#pragma once
+
 #include "../rtc.h"
 
 String Locale_FormatTime(DateTime dateTime) {
@@ -27,5 +29,12 @@ String Locale_FormatDate(DateTime dateTime) {
     output += MONTHS[dateTime.month() - 1];
     output += ' ';
     output += dateTime.day();
+    return output;
+}
+
+String Locale_FormatTemperature(int tempCelsius, int celsiusIconIndex) {
+    String output;
+    output += tempCelsius;
+    output += (char)celsiusIconIndex;
     return output;
 }
