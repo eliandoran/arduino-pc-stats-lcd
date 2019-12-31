@@ -7,6 +7,10 @@ DateTime RTC_GetTime() {
     return rtc.now();
 }
 
+void RTC_SetTime(DateTime time) {
+    rtc.adjust(time);
+}
+
 bool RTC_IsTimeSet() {
     DateTime currentTime = RTC_GetTime();
     return (currentTime.unixtime() > RTC_MINIMAL_TIMESTAMP.unixtime());
@@ -27,7 +31,8 @@ void RTC_Initialize() {
 
     if (RTC_IsTimeSet()) {
         Serial.println("[RTC] Time is set.");
-    } else {
+    } else {        
         Serial.println("[RTC] Time is not set.");
+        RTC_SetTime(RTC_MINIMAL_TIMESTAMP);
     }
 }
