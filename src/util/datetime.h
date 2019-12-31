@@ -16,8 +16,6 @@ String DateTime_FormatDate(DateTime dateTime) {
     output += ", ";
     output += dateTime.month();
     output += ' ';
-    output += dateTime.day();    
-    output += " @ ";
-    output += dateTime.second();
+    output += dateTime.day();
     return output;
 }
