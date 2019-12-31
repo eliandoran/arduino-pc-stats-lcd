@@ -1,24 +1,18 @@
 #include <Arduino.h>
 #include <Wire.h>
 
-#include <LiquidCrystal_I2C.h>
 #include <RTClib.h>
 
 #include "src/config.h"
 #include "src/trace.h"
 #include "src/rtc.h"
-
-LiquidCrystal_I2C lcd(LCD_ADDRESS, LCD_COLUMNS, LCD_ROWS);
+#include "src/lcd.h"
 
 void setup()
 {
-    Trace_Initialize();
-
-    lcd.init();
-    lcd.backlight();
-    lcd.clear();    
-
+    Trace_Initialize();    
     RTC_Initialize();
+    LCD_Initialize();
 }
 
 void loop()
