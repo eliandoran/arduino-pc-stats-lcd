@@ -14,7 +14,7 @@ String DateTime_FormatDate(DateTime dateTime) {
     String output;
     output += DAYS_OF_THE_WEEK[dateTime.dayOfTheWeek()];
     output += ", ";
-    output += dateTime.month();
+    output += MONTHS[dateTime.month() - 1];
     output += ' ';
     output += dateTime.day();
     return output;

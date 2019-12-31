@@ -25,3 +25,7 @@
 const char* DAYS_OF_THE_WEEK[] = {
     "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
 };
+
+const char* MONTHS[] = {
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+};
