@@ -33,6 +33,15 @@ void LCD_ClearLine(int y) {
     LCD_Print(emptyLine.c_str(), 0, y);
 }
 
+void LCD_SetCustomCharacter(byte charIndex, uint8_t charData[]) {
+    lcd.createChar(charIndex, charData);
+}
+
+void LCD_DrawCustomCharacter(byte charIndex, int x, int y) {
+    lcd.setCursor(x, y);
+    lcd.write(charIndex);
+}
+
 void LCD_Initialize() {
     lcd.init();
     lcd.backlight();
