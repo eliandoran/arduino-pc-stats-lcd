@@ -9,6 +9,7 @@
 #include "src/lcd.h"
 
 #include "src/screens/idle.h"
+#include "src/screens/cpu-gpu.h"
 
 void setup()
 {
@@ -19,5 +20,6 @@ void setup()
 
 void loop()
 {
-	Screen_Idle();
+	//Screen_Idle();    
+    Screen_CPU_GPU();
 }
