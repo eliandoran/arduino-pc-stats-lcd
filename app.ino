@@ -10,6 +10,7 @@
 
 #include "src/screens/idle.h"
 #include "src/screens/cpu-gpu.h"
+#include "src/screens/temperature.h"
 
 #include "src/ui/hprogress.h"
 
@@ -23,5 +24,6 @@ void setup()
 void loop()
 {
 	//Screen_Idle();    
-    Screen_CPU_GPU();
+    //Screen_CPU_GPU();
+    Screen_Temperature();
 }

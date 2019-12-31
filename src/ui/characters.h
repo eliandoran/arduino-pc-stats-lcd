@@ -143,6 +143,17 @@ uint8_t CHAR_RAM[] = {
   B00000
 };
 
+uint8_t CHAR_MOTHERBOARD[] = {
+  B00000,
+  B11111,
+  B11111,
+  B11011,
+  B11011,
+  B11111,
+  B11111,
+  B00000
+};
+
 uint8_t CHAR_CELSIUS_DEGREE[] = {
   B01000,
   B10100,
