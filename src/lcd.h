@@ -17,13 +17,17 @@ void LCD_Print(char ch, int x, int y) {
     lcd.print(ch);
 }
 
-void LCD_PrintCentered(const char* text, int y) {
+void LCD_PrintCentered(const char* text, int x, int y, int width) {
     int length = strlen(text);
 
     if (length > 0) {
-        int x = (LCD_COLUMNS / 2 - length / 2);
+        x += (width / 2 - length / 2);
         LCD_Print(text, x, y);
     }
+}
+
+void LCD_PrintCentered(const char* text, int y) {
+    LCD_PrintCentered(text, 0, y, LCD_COLUMNS);
 }
 
 void LCD_PrintRight(const char* text, int y) {

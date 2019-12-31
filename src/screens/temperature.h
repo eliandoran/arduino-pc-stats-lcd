@@ -6,7 +6,10 @@
 #define ICON_MOTHERBOARD 2
 
 static void drawComponent(int icon, int temperature, int x, int width) {
-    LCD_DrawCustomCharacter(icon, x, 0);
+    LCD_DrawCustomCharacter(icon, x + width / 2, 0);    
+
+    String temperatureStr = String(temperature);
+    LCD_PrintCentered(temperatureStr.c_str(), x, 1, width);
 }
 
 void Screen_Temperature() {
@@ -18,5 +21,5 @@ void Screen_Temperature() {
 
     drawComponent(ICON_CPU, 30, 0, width);
     drawComponent(ICON_GPU, 60, 6, width);
-    drawComponent(ICON_MOTHERBOARD, 90, 12, width);
+    drawComponent(ICON_MOTHERBOARD, 90, 12, width);    
 }
