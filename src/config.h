@@ -18,3 +18,10 @@
  * Time format
  */
 #define TIME_SEPARATOR ':'
+
+/*
+ * Date format
+ */
+const char* DAYS_OF_THE_WEEK[] = {
+    "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
+};

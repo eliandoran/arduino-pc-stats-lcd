@@ -12,7 +12,7 @@ String DateTime_FormatTime(DateTime dateTime) {
 
 String DateTime_FormatDate(DateTime dateTime) {
     String output;
-    output += dateTime.dayOfTheWeek();
+    output += DAYS_OF_THE_WEEK[dateTime.dayOfTheWeek()];
     output += ", ";
     output += dateTime.month();
     output += ' ';
