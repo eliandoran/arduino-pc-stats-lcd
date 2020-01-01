@@ -2,6 +2,7 @@
 
 #include "trace.h"
 #include "limits.h"
+#include "command.h"
 
 #define LOOP_DEFAULT_INTERVAL 500
 #define LOOP_INNER_DELAY 50
@@ -21,6 +22,7 @@ void Loop_Enter(void (*initialPage)(void)) {
     while (true) {        
         long currentTime = millis();
 
+        // Update the current screen if needed.
         if ((currentTime - lastUpdateTime) > currentInterval) {
             long startTime = millis();
             TRACE("Start update");
@@ -30,6 +32,9 @@ void Loop_Enter(void (*initialPage)(void)) {
 
             lastUpdateTime = currentTime;
         }
+
+        // Check if there are any updates on the serial port.
+        Command_Check();
 
         delay(LOOP_INNER_DELAY);
     }

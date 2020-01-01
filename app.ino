@@ -7,23 +7,21 @@
 #include "src/trace.h"
 #include "src/rtc.h"
 #include "src/lcd.h"
+#include "src/loop.h"
 
 #include "src/screens/idle.h"
-#include "src/screens/cpu-gpu.h"
-#include "src/screens/temperature.h"
-
-#include "src/ui/hprogress.h"
 
 void setup()
 {
     Trace_Initialize();    
     RTC_Initialize();
     LCD_Initialize();      
+
+    void (*initialPage)(void) = &Screen_Idle;
+    Loop_Enter(initialPage);
 }
 
 void loop()
-{
-	//Screen_Idle();    
-    //Screen_CPU_GPU();
-    Screen_Temperature();
+{    
+	
 }
