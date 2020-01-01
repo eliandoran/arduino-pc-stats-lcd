@@ -2,12 +2,18 @@
 #include <string.h>
 #include "util/trace.h"
 #include "command.h"
+#include "navigator.h"
 
 String serialBuffer;
 
 void Command_Exec(String** args, int numArgs) {
     for (int i=0; i<numArgs; i++) {
         TRACE_VAL(String("[COMMAND] Arg ") + *args[i]);
+    }
+
+    String commandName = *args[0];
+    if (commandName.equals("next")) {
+        Navigator_GoNext();
     }
 }
 
