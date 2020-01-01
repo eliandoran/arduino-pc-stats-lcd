@@ -6,7 +6,8 @@
 
 void (*pages[])(bool) = {
     &Screen_Idle,
-    &Screen_Temperature
+    &Screen_Temperature,
+    &Screen_CPU_GPU
 };
 
 const int NUM_PAGES = (sizeof(pages) / sizeof(pages[0]));

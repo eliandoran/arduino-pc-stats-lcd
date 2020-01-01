@@ -10,24 +10,23 @@
 
 #define ICON_CELSIUS_STR "\x2"
 
-void Screen_CPU_GPU() {
-    randomSeed(millis());
+void Screen_CPU_GPU(bool initialized) {
+    if (!initialized) {
+        randomSeed(millis());
 
-    LCD_SetCustomCharacter(ICON_CPU, CHAR_CPU);
-    LCD_SetCustomCharacter(ICON_GPU, CHAR_GPU);
-    LCD_SetCustomCharacter(ICON_CELSIUS, CHAR_CELSIUS_DEGREE);
+        LCD_SetCustomCharacter(ICON_CPU, CHAR_CPU);
+        LCD_SetCustomCharacter(ICON_GPU, CHAR_GPU);
+        LCD_SetCustomCharacter(ICON_CELSIUS, CHAR_CELSIUS_DEGREE);
+
+        HProgress_Initialize();
+    }
 
     LCD_DrawCustomCharacter(ICON_CPU, 0, 0);
     LCD_DrawCustomCharacter(ICON_GPU, 0, 1);
 
     LCD_PrintRight("32" ICON_CELSIUS_STR, 0);
-    LCD_PrintRight("42" ICON_CELSIUS_STR, 1);
-    
-    HProgress_Initialize();        
+    LCD_PrintRight("42" ICON_CELSIUS_STR, 1);        
 
-    while (true) {
-        HProgress_Draw(2, 0, 10, HProgress_GetValue(0, rand(), RAND_MAX));
-        HProgress_Draw(2, 1, 10, HProgress_GetValue(0, rand(), RAND_MAX));
-        delay(16);
-    }
+    //HProgress_Draw(2, 0, 10, HProgress_GetValue(0, rand(), RAND_MAX));
+    //HProgress_Draw(2, 1, 10, HProgress_GetValue(0, rand(), RAND_MAX));
 }
