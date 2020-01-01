@@ -22,7 +22,7 @@ void Command_ParseExec(String command) {
     String **args = (String**)malloc(sizeof(String*) * COMMAND_MAX_ARGS);
     int numArgs = 0;
     while ((spaceIndex = command.indexOf(' ', pos)) > -1 &&
-            numArgs < COMMAND_MAX_ARGS) {
+            numArgs < COMMAND_MAX_ARGS) {                
         String segment = command.substring(pos, spaceIndex);        
         pos = spaceIndex + 1;
         args[numArgs++] = new String(segment);
@@ -36,14 +36,13 @@ void Command_ParseExec(String command) {
 }
 
 void Command_Check() {
-    if (Serial.available() < 1)
-        return;
+    if (Serial.available() > 0) {
+        String inputStr = Serial.readString();
+        serialBuffer += inputStr;
+    }    
 
-    String inputStr = Serial.readString();
-    serialBuffer += inputStr;
-    
     int newLineIndex = serialBuffer.indexOf('\n');
-    if (newLineIndex > 0) {
+    while (serialBuffer.length() != 0 && newLineIndex > 0) {
         // Execute command if non-empty.
         if (newLineIndex > 1) {
             String command = serialBuffer.substring(0, newLineIndex - 1);
@@ -53,7 +52,5 @@ void Command_Check() {
         }
         
         serialBuffer = serialBuffer.substring(newLineIndex + 1);
-    } else {
-        TRACE("[COMMAND] Did not get newline!")
     }
 }
