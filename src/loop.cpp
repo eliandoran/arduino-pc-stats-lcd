@@ -39,17 +39,18 @@ void Loop_Enter() {
 
         // Update the current screen if needed.
         if ((currentTime - lastUpdateTime) > currentInterval && currentPage != NULL) {
+            #ifdef LOOP_TRACE_UPDATES
             long startTime = millis();
+            #endif
 
-            (*currentPage)(initialized);
-            initialized = true;
-
-            int duration = (int)(millis() - startTime);
+            (*currentPage)(initialized);            
 
             #ifdef LOOP_TRACE_UPDATES
+            int duration = (int)(millis() - startTime);
             TRACE_VAL(String("[LOOP] Update at ") + millis() + " in " + duration);
             #endif
 
+            initialized = true;
             lastUpdateTime = currentTime;
         }
 
