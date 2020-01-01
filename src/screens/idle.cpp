@@ -4,10 +4,13 @@
 #include "screens.h"
 #include "util/locale.h"
 
-DateTime lastTime = DateTime(0);
+DateTime lastTime;
 
-void Screen_Idle() {        
-    Loop_SetInterval(1000);
+void Screen_Idle(bool initialized) {
+    if (!initialized) {
+        Loop_SetInterval(1000);
+        lastTime = DateTime(0);
+    }
 
     DateTime now = RTC_GetTime();
 

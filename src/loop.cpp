@@ -10,13 +10,15 @@
 
 int currentInterval = LOOP_DEFAULT_INTERVAL;
 long lastUpdateTime;
-void (*currentPage)(void) = NULL;
+
+void (*currentPage)(bool) = NULL;
+void (*lastPage)(bool) = NULL;
 
 void Loop_SetInterval(int interval) {
     currentInterval = interval;
 }
 
-void Loop_SetCurrentPage(void (*page)(void)) {
+void Loop_SetCurrentPage(void (*page)(bool)) {
     currentPage = page;
     Loop_Invalidate();
 }
@@ -38,7 +40,9 @@ void Loop_Enter() {
         // Update the current screen if needed.
         if ((currentTime - lastUpdateTime) > currentInterval && currentPage != NULL) {
             long startTime = millis();
-            (*currentPage)();
+
+            bool initialized = (currentPage == lastPage); // Page is initialized if it hasn't changed.
+            (*currentPage)(initialized);
             int duration = (int)(millis() - startTime);
 
             #ifdef LOOP_TRACE_UPDATES
@@ -46,6 +50,7 @@ void Loop_Enter() {
             #endif
 
             lastUpdateTime = currentTime;
+            lastPage = currentPage;
         }
 
         // Check if there are any updates on the serial port.

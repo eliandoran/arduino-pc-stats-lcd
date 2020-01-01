@@ -3,7 +3,7 @@
 #include "screens.h"
 #include "util/trace.h"
 
-void (*pages[])(void) = {
+void (*pages[])(bool) = {
     &Screen_Idle,
     &Screen_Temperature
 };
