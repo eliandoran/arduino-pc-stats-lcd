@@ -29,6 +29,7 @@ void Loop_ResetInterval() {
 void Loop_Invalidate() {
     lastUpdateTime = -LOOP_DEFAULT_INTERVAL;
     initialized = false;
+    Loop_ResetInterval();
 }
 
 void Loop_Enter() {
