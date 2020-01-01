@@ -1,8 +1,15 @@
 #include <Arduino.h>
 #include <string.h>
 #include "util/trace.h"
+#include "command.h"
 
 String serialBuffer;
+
+void Command_Exec(String** args, int numArgs) {
+    for (int i=0; i<numArgs; i++) {
+        TRACE_VAL(String("[COMMAND] Arg ") + *args[i]);
+    }
+}
 
 void Command_ParseExec(String command) {
     TRACE_VAL(String("[COMMAND] Got command ") + command)
@@ -11,11 +18,17 @@ void Command_ParseExec(String command) {
     int spaceIndex;
     
     command += ' ';
-    while ((spaceIndex = command.indexOf(' ', pos)) > -1) {
-        String segment = command.substring(pos, spaceIndex);
-        TRACE_VAL(String("[COMMAND] Arg ") + segment);
+    
+    String **args = (String**)malloc(sizeof(String*));
+    int numArgs = 0;
+    while ((spaceIndex = command.indexOf(' ', pos)) > -1) {        
+        String segment = command.substring(pos, spaceIndex);        
         pos = spaceIndex + 1;
+        args[numArgs++] = new String(segment);
     }
+
+    Command_Exec(args, numArgs);
+    free(args);
 }
 
 void Command_Check() {
