@@ -5,6 +5,7 @@
 
 #define LOOP_DEFAULT_INTERVAL 500
 #define LOOP_INNER_DELAY 50
+//#define LOOP_TRACE_UPDATES
 
 int currentInterval = LOOP_DEFAULT_INTERVAL;
 long lastUpdateTime = -LOOP_DEFAULT_INTERVAL;
@@ -31,7 +32,10 @@ void Loop_Enter() {
             long startTime = millis();
             (*currentPage)();
             int duration = (int)(millis() - startTime);
+
+            #ifdef LOOP_TRACE_UPDATES
             TRACE_VAL(String("[LOOP] Update at ") + millis() + " in " + duration);
+            #endif
 
             lastUpdateTime = currentTime;
         }
