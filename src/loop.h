@@ -7,8 +7,10 @@
 void Loop_Enter() {
     void (*initialPage)(void) = &Screen_Idle;
 
-    while (true) {
-        TRACE_VAL(String("Update at ") + millis());
+    while (true) {        
+        long startTime = millis();
         (*initialPage)();
+        int duration = (int)(millis() - startTime);
+        TRACE_VAL(String("[LOOP] Update at ") + millis() + " in " + duration);
     }
 }
