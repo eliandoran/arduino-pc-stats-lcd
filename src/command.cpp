@@ -22,6 +22,12 @@ void Command_Exec(String** args, int numArgs) {
         return;
     }
 
+    if (commandName.equals(COMMAND_PAGE_JUMP) && numArgs == 2) {
+        int pageIndex = atoi(args[1]->c_str());
+        Navigator_SetPage(pageIndex);
+        return;
+    }
+
     TRACE_VAL(String("[COMMAND] Unknown command: ") + commandName);
 }
 
