@@ -14,6 +14,7 @@ int currentPageIndex;
 
 void Navigator_SetPage(int pageIndex) {
     currentPageIndex = (pageIndex % NUM_PAGES);
+    TRACE_VAL(String("[NAVIGATOR] Set page index: ") + currentPageIndex);   
 
     LCD_Clear();
     Loop_SetCurrentPage(pages[currentPageIndex]);
@@ -24,11 +25,11 @@ void Navigator_Start() {
 }
 
 void Navigator_GoNext() {
-    TRACE("Go to next page.");
+    TRACE("[NAVIGATOR] Go to next page.");
     Navigator_SetPage(currentPageIndex + 1);
 }
 
 void Navigator_GoBack() {
-    TRACE("Go to the previous page.");
+    TRACE("[NAVIGATOR] Go to the previous page.");
     Navigator_SetPage(currentPageIndex - 1);
 }
