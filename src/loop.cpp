@@ -5,7 +5,7 @@
 #include "loop.h"
 
 #define LOOP_DEFAULT_INTERVAL 500
-#define LOOP_INNER_DELAY 50
+#define LOOP_INNER_DELAY 5
 //#define LOOP_TRACE_UPDATES
 
 int currentInterval = LOOP_DEFAULT_INTERVAL;
