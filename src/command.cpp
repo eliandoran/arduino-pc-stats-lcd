@@ -5,7 +5,7 @@
 String serialBuffer;
 
 void Command_ParseExec(String command) {
-    TRACE_VAL(String("[COMMAND] Got command ") + command);
+    TRACE_VAL(String("[COMMAND] Got command ") + command)
 }
 
 void Command_Check() {
@@ -17,10 +17,16 @@ void Command_Check() {
     
     int newLineIndex = serialBuffer.indexOf('\n');
     if (newLineIndex > 0) {
-        String command = serialBuffer.substring(0, newLineIndex - 1);
-        Command_ParseExec(command);
+        // Execute command if non-empty.
+        if (newLineIndex > 1) {
+            String command = serialBuffer.substring(0, newLineIndex - 1);
+            Command_ParseExec(command);
+        } else {
+            TRACE("[COMMAND] Got a blank line.")
+        }
+        
         serialBuffer = serialBuffer.substring(newLineIndex + 1);
     } else {
-        TRACE("Did not get newline!")
+        TRACE("[COMMAND] Did not get newline!")
     }
 }
