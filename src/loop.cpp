@@ -2,13 +2,14 @@
 #include "util/trace.h"
 #include "limits.h"
 #include "command.h"
+#include "loop.h"
 
 #define LOOP_DEFAULT_INTERVAL 500
 #define LOOP_INNER_DELAY 50
 //#define LOOP_TRACE_UPDATES
 
 int currentInterval = LOOP_DEFAULT_INTERVAL;
-long lastUpdateTime = -LOOP_DEFAULT_INTERVAL;
+long lastUpdateTime;
 void (*currentPage)(void) = NULL;
 
 void Loop_SetInterval(int interval) {
@@ -17,13 +18,20 @@ void Loop_SetInterval(int interval) {
 
 void Loop_SetCurrentPage(void (*page)(void)) {
     currentPage = page;
+    Loop_Invalidate();
 }
 
 void Loop_ResetInterval() {
     currentInterval = LOOP_DEFAULT_INTERVAL;
 }
 
+void Loop_Invalidate() {
+    lastUpdateTime = -LOOP_DEFAULT_INTERVAL;
+}
+
 void Loop_Enter() {
+    Loop_Invalidate();
+
     while (true) {        
         long currentTime = millis();
 
