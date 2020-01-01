@@ -1,6 +1,8 @@
 #pragma once
 
+#include <Arduino.h>
 #include "config.h"
+
 #define TRACE(str) (Serial.println(F(str)));
 #define TRACE_VAL(val) (Serial.println(val));
 
