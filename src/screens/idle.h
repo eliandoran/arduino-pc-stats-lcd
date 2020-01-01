@@ -9,12 +9,12 @@ void Screen_Idle() {
 
     // Display time
     String timeFormatted = Locale_FormatTime(now);
-    LCD_PrintCentered(timeFormatted.c_str(), 0);
+    LCD_PrintCentered(timeFormatted, 0);
 
     // Display date
     if (now.day() != lastTime.day()) {
         String dateFormatted = Locale_FormatDate(now);    
-        LCD_PrintCentered(dateFormatted.c_str(), 1);
+        LCD_PrintCentered(dateFormatted, 1);
     }
 
     lastTime = now;

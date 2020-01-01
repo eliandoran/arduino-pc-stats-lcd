@@ -39,6 +39,11 @@ void LCD_PrintRight(const char* text, int y) {
     }
 }
 
+inline void LCD_Print(const String &text, int x, int y) { LCD_Print(text.c_str(), x, y); }
+inline void LCD_PrintCentered(const String &text, int x, int y, int width) { LCD_PrintCentered(text.c_str(), x, y, width); }
+inline void LCD_PrintCentered(const String &text, int y) { LCD_PrintCentered(text.c_str(), y); }
+inline void LCD_PrintRight(const String &text, int y) { LCD_PrintRight(text.c_str(), y); }
+
 void LCD_Clear() {
     lcd.clear();
 }

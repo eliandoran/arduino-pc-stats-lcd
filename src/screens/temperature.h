@@ -11,7 +11,7 @@ static void drawComponent(int icon, int temperature, int x, int width) {
     LCD_DrawCustomCharacter(icon, x + width / 2, 0);    
 
     String temperatureStr = Locale_FormatTemperature(temperature, ICON_CELSIUS_DEGREE);
-    LCD_PrintCentered(temperatureStr.c_str(), x, 1, width);
+    LCD_PrintCentered(temperatureStr, x, 1, width);
 }
 
 void Screen_Temperature() {
