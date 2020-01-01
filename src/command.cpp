@@ -19,6 +19,7 @@ void Command_Check() {
     if (newLineIndex > 0) {
         String command = serialBuffer.substring(0, newLineIndex - 1);
         Command_ParseExec(command);
+        serialBuffer = serialBuffer.substring(newLineIndex + 1);
     } else {
         TRACE("Did not get newline!")
     }
