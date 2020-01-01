@@ -14,7 +14,15 @@ void Command_Exec(String** args, int numArgs) {
     String commandName = *args[0];
     if (commandName.equals("next")) {
         Navigator_GoNext();
+        return;
     }
+
+    if (commandName.equals("prev")) {
+        Navigator_GoBack();
+        return;
+    }
+
+    TRACE_VAL(String("[COMMAND] Unknown command: ") + commandName);
 }
 
 void Command_ParseExec(String command) {
