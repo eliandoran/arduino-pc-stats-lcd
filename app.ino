@@ -8,8 +8,7 @@
 #include "src/rtc.h"
 #include "src/lcd.h"
 #include "src/loop.h"
-
-#include "src/screens/idle.h"
+#include "src/navigator.h"
 
 void setup()
 {
@@ -17,8 +16,8 @@ void setup()
     RTC_Initialize();
     LCD_Initialize();      
 
-    void (*initialPage)(void) = &Screen_Idle;
-    Loop_Enter(initialPage);
+    Navigator_Start();
+    Loop_Enter();
 }
 
 void loop()

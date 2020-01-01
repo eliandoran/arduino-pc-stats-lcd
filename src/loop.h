@@ -9,24 +9,29 @@
 
 int currentInterval = LOOP_DEFAULT_INTERVAL;
 long lastUpdateTime = -LOOP_DEFAULT_INTERVAL;
+void (*currentPage)(void) = NULL;
 
 void Loop_SetInterval(int interval) {
     currentInterval = interval;
+}
+
+void Loop_SetCurrentPage(void (*page)(void)) {
+    currentPage = page;
 }
 
 void Loop_ResetInterval() {
     currentInterval = LOOP_DEFAULT_INTERVAL;
 }
 
-void Loop_Enter(void (*initialPage)(void)) {
+void Loop_Enter() {
     while (true) {        
         long currentTime = millis();
 
         // Update the current screen if needed.
-        if ((currentTime - lastUpdateTime) > currentInterval) {
+        if ((currentTime - lastUpdateTime) > currentInterval && currentPage != NULL) {
             long startTime = millis();
             TRACE("Start update");
-            (*initialPage)();
+            (*currentPage)();
             int duration = (int)(millis() - startTime);
             TRACE_VAL(String("[LOOP] Update at ") + millis() + " in " + duration);
 
