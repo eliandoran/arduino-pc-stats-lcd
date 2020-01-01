@@ -19,9 +19,10 @@ void Command_ParseExec(String command) {
     
     command += ' ';
     
-    String **args = (String**)malloc(sizeof(String*));
+    String **args = (String**)malloc(sizeof(String*) * COMMAND_MAX_ARGS);
     int numArgs = 0;
-    while ((spaceIndex = command.indexOf(' ', pos)) > -1) {        
+    while ((spaceIndex = command.indexOf(' ', pos)) > -1 &&
+            numArgs < COMMAND_MAX_ARGS) {
         String segment = command.substring(pos, spaceIndex);        
         pos = spaceIndex + 1;
         args[numArgs++] = new String(segment);
@@ -29,7 +30,8 @@ void Command_ParseExec(String command) {
 
     Command_Exec(args, numArgs);
 
-    for (int i=0; i<numArgs; i++) free(args[i]);
+    for (int i=0; i<numArgs; i++)
+        delete args[i];
     free(args);
 }
 
