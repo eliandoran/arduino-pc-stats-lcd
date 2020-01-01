@@ -27,6 +27,6 @@ void Screen_CPU_GPU(bool initialized) {
     LCD_PrintRight("32" ICON_CELSIUS_STR, 0);
     LCD_PrintRight("42" ICON_CELSIUS_STR, 1);        
 
-    //HProgress_Draw(2, 0, 10, HProgress_GetValue(0, rand(), RAND_MAX));
-    //HProgress_Draw(2, 1, 10, HProgress_GetValue(0, rand(), RAND_MAX));
+    HProgress_Draw(2, 0, 10, HProgress_GetValue(0, rand(), RAND_MAX));
+    HProgress_Draw(2, 1, 10, HProgress_GetValue(0, rand(), RAND_MAX));
 }
