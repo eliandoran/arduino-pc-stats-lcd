@@ -1,8 +1,6 @@
-#pragma once
-
-#include "characters.h"
-#include "../lcd.h"
-#include "../trace.h"
+#include "ui/characters.h"
+#include "lcd.h"
+#include "util/trace.h"
 
 #define INDEX_HPROGRESS_20  7
 #define INDEX_HPROGRESS_40  6
@@ -27,8 +25,8 @@ void HProgress_Initialize() {
     LCD_SetCustomCharacter(INDEX_HPROGRESS_100, CHAR_HPROGRESS_100);
 }
 
-void HProgress_Draw(int x, int y, int width, byte value) {
-    int numPixels = (((float)value / 100) * width * LCD_CHAR_WIDTH);    
+void HProgress_Draw(int x, int y, int width, short value) {
+    int numPixels = (((float)value * 100) * width * LCD_CHAR_WIDTH);    
     int startX = x;
     
     // Draw full segments
@@ -51,6 +49,6 @@ void HProgress_Draw(int x, int y, int width, byte value) {
     LCD_ClearLine(x, y, emptySegments);
 }
 
-byte HProgress_GetValue(int min, int current, int max) {
+short HProgress_GetValue(int min, int current, int max) {
     return ((float)(current - min) / (max - min)) * 100;
 }

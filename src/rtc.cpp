@@ -1,8 +1,6 @@
-#pragma once
-
 #include <RTClib.h>
 #include "config.h"
-#include "trace.h"
+#include "util/trace.h"
 
 RTC_DS1307 rtc;
 

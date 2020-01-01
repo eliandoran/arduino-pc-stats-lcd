@@ -1,7 +1,8 @@
-#include "../lcd.h"
-#include "../rtc.h"
-#include "../loop.h"
-#include "../util/locale.h"
+#include "lcd.h"
+#include "rtc.h"
+#include "loop.h"
+#include "screens.h"
+#include "util/locale.h"
 
 DateTime lastTime = DateTime(0);
 

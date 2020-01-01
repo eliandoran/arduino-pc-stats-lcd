@@ -1,7 +1,8 @@
-#include "../lcd.h"
-#include "../ui/characters.h"
-#include "../ui/charmap.h"
-#include "../ui/hprogress.h"
+#include "lcd.h"
+#include "screens.h"
+#include "ui/characters.h"
+#include "ui/charmap.h"
+#include "ui/hprogress.h"
 
 #define ICON_CPU 0
 #define ICON_GPU 1

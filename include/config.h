@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef CONFIG_H
+#define CONFIG_H
+
 #define SERIAL_BAUDRATE 9600
 
 /*
@@ -22,13 +25,4 @@
  */
 #define TIME_SEPARATOR ':'
 
-/*
- * Date format
- */
-const char* DAYS_OF_THE_WEEK[] = {
-    "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
-};
-
-const char* MONTHS[] = {
-    "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
-};
+#endif

@@ -1,4 +1,5 @@
-#include "trace.h"
+#include <Arduino.h>
+#include "util/trace.h"
 
 void Command_Check() {
     if (Serial.available() < 1)

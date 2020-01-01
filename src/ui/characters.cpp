@@ -1,4 +1,5 @@
-#pragma once
+#include <Arduino.h>
+#include "ui/characters.h"
 
 uint8_t CHAR_VPROGRESS_EMPTY[] = {
   B00000,

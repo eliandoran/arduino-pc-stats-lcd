@@ -1,6 +1,5 @@
-#pragma once
-
-#include "trace.h"
+#include <Arduino.h>
+#include "util/trace.h"
 #include "limits.h"
 #include "command.h"
 

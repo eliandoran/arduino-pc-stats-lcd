@@ -1,9 +1,5 @@
-#pragma once
-
 #include "loop.h"
-
-#include "screens/idle.h"
-#include "screens/temperature.h"
+#include "screens.h"
 
 void (*pages[])(void) = {
     &Screen_Idle,

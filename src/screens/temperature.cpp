@@ -1,6 +1,8 @@
-#include "../lcd.h"
-#include "../ui/characters.h"
-#include "../util/locale.h"
+#include "lcd.h"
+#include "config.h"
+#include "screens.h"
+#include "ui/characters.h"
+#include "util/locale.h"
 
 #define ICON_CPU 0
 #define ICON_GPU 1

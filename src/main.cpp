@@ -3,12 +3,12 @@
 
 #include <RTClib.h>
 
-#include "src/config.h"
-#include "src/trace.h"
-#include "src/rtc.h"
-#include "src/lcd.h"
-#include "src/loop.h"
-#include "src/navigator.h"
+#include "config.h"
+#include "util/trace.h"
+#include "rtc.h"
+#include "lcd.h"
+#include "loop.h"
+#include "navigator.h"
 
 void setup()
 {
