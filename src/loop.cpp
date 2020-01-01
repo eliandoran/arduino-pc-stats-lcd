@@ -29,7 +29,6 @@ void Loop_Enter() {
         // Update the current screen if needed.
         if ((currentTime - lastUpdateTime) > currentInterval && currentPage != NULL) {
             long startTime = millis();
-            TRACE("Start update");
             (*currentPage)();
             int duration = (int)(millis() - startTime);
             TRACE_VAL(String("[LOOP] Update at ") + millis() + " in " + duration);

@@ -6,5 +6,5 @@ void Command_Check() {
         return;
 
     String commandStr = Serial.readString();
-    TRACE_VAL(String("Got command ") + commandStr);
+    TRACE_VAL(String("[COMMAND] Got command ") + commandStr);
 }
