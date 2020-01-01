@@ -12,12 +12,12 @@ void Command_Exec(String** args, int numArgs) {
     }
 
     String commandName = *args[0];
-    if (commandName.equals("next")) {
+    if (commandName.equals(COMMAND_PAGE_NEXT)) {
         Navigator_GoNext();
         return;
     }
 
-    if (commandName.equals("prev")) {
+    if (commandName.equals(COMMAND_PAGE_PREV)) {
         Navigator_GoBack();
         return;
     }
