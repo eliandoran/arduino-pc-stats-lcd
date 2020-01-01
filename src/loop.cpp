@@ -8,11 +8,10 @@
 #define LOOP_INNER_DELAY 5
 //#define LOOP_TRACE_UPDATES
 
+void (*currentPage)(bool) = NULL;
 int currentInterval = LOOP_DEFAULT_INTERVAL;
 long lastUpdateTime;
-
-void (*currentPage)(bool) = NULL;
-void (*lastPage)(bool) = NULL;
+bool initialized;
 
 void Loop_SetInterval(int interval) {
     currentInterval = interval;
@@ -29,6 +28,7 @@ void Loop_ResetInterval() {
 
 void Loop_Invalidate() {
     lastUpdateTime = -LOOP_DEFAULT_INTERVAL;
+    initialized = false;
 }
 
 void Loop_Enter() {
@@ -41,8 +41,9 @@ void Loop_Enter() {
         if ((currentTime - lastUpdateTime) > currentInterval && currentPage != NULL) {
             long startTime = millis();
 
-            bool initialized = (currentPage == lastPage); // Page is initialized if it hasn't changed.
             (*currentPage)(initialized);
+            initialized = true;
+
             int duration = (int)(millis() - startTime);
 
             #ifdef LOOP_TRACE_UPDATES
@@ -50,7 +51,6 @@ void Loop_Enter() {
             #endif
 
             lastUpdateTime = currentTime;
-            lastPage = currentPage;
         }
 
         // Check if there are any updates on the serial port.
