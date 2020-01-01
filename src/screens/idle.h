@@ -1,10 +1,13 @@
 #include "../lcd.h"
 #include "../rtc.h"
+#include "../loop.h"
 #include "../util/locale.h"
 
 DateTime lastTime = DateTime(0);
 
 void Screen_Idle() {        
+    Loop_SetInterval(1000);
+
     DateTime now = RTC_GetTime();
 
     // Display time
@@ -18,5 +21,4 @@ void Screen_Idle() {
     }
 
     lastTime = now;
-    delay(1000);
 }
