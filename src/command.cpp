@@ -6,6 +6,16 @@ String serialBuffer;
 
 void Command_ParseExec(String command) {
     TRACE_VAL(String("[COMMAND] Got command ") + command)
+
+    int pos = 0;
+    int spaceIndex;
+    
+    command += ' ';
+    while ((spaceIndex = command.indexOf(' ', pos)) > -1) {
+        String segment = command.substring(pos, spaceIndex);
+        TRACE_VAL(String("[COMMAND] Arg ") + segment);
+        pos = spaceIndex + 1;
+    }
 }
 
 void Command_Check() {
