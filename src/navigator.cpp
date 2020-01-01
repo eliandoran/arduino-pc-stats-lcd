@@ -13,7 +13,7 @@ const int NUM_PAGES = (sizeof(pages) / sizeof(pages[0]));
 int currentPageIndex;
 
 void Navigator_SetPage(int pageIndex) {
-    currentPageIndex = (pageIndex % NUM_PAGES);
+    currentPageIndex = abs(pageIndex % NUM_PAGES);
     TRACE_VAL(String("[NAVIGATOR] Set page index: ") + currentPageIndex);   
 
     LCD_Clear();
