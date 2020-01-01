@@ -25,9 +25,11 @@ void Command_ParseExec(String command) {
         String segment = command.substring(pos, spaceIndex);        
         pos = spaceIndex + 1;
         args[numArgs++] = new String(segment);
-    }
+    }    
 
     Command_Exec(args, numArgs);
+
+    for (int i=0; i<numArgs; i++) free(args[i]);
     free(args);
 }
 
