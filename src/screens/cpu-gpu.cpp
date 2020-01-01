@@ -1,5 +1,6 @@
 #include "lcd.h"
 #include "screens.h"
+#include "loop.h"
 #include "ui/characters.h"
 #include "ui/charmap.h"
 #include "ui/hprogress.h"
@@ -12,6 +13,8 @@
 
 void Screen_CPU_GPU(bool initialized) {
     if (!initialized) {
+        Loop_SetInterval(500);
+
         randomSeed(millis());
 
         LCD_SetCustomCharacter(ICON_CPU, CHAR_CPU);
