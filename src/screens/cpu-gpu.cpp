@@ -1,6 +1,8 @@
+#include "util/locale.h"
 #include "lcd.h"
 #include "screens.h"
 #include "loop.h"
+#include "registry.h"
 #include "ui/characters.h"
 #include "ui/charmap.h"
 #include "ui/hprogress.h"
@@ -24,12 +26,21 @@ void Screen_CPU_GPU(bool initialized) {
         HProgress_Initialize();
     }
 
+    // Display icons for CPU and GPU.
     LCD_DrawCustomCharacter(ICON_CPU, 0, 0);
-    LCD_DrawCustomCharacter(ICON_GPU, 0, 1);
+    LCD_DrawCustomCharacter(ICON_GPU, 0, 1);        
 
-    LCD_PrintRight("32" ICON_CELSIUS_STR, 0);
-    LCD_PrintRight("42" ICON_CELSIUS_STR, 1);        
-
+    // Display an horizontal indicator of CPU and GPU usage.
     HProgress_Draw(2, 0, 10, HProgress_GetValue(0, rand(), RAND_MAX));
     HProgress_Draw(2, 1, 10, HProgress_GetValue(0, rand(), RAND_MAX));
+
+    // Display the temperatures.
+    bool hasCpuTemp = Registry_IsSet(REGISTRY_TEMP_CPU);
+    bool hasGpuTemp = Registry_IsSet(REGISTRY_TEMP_GPU);
+    int cpuTemp = Registry_GetValue(REGISTRY_TEMP_CPU);
+    int gpuTemp = Registry_GetValue(REGISTRY_TEMP_GPU);
+    String cpuTempStr = Locale_FormatTemperature(cpuTemp, ICON_CELSIUS, hasCpuTemp);
+    String gpuTempStr = Locale_FormatTemperature(gpuTemp, ICON_CELSIUS, hasGpuTemp);
+    LCD_PrintRight(cpuTempStr, 0);
+    LCD_PrintRight(gpuTempStr, 1);        
 }

@@ -42,7 +42,7 @@ String Locale_FormatDate(DateTime dateTime) {
     return output;
 }
 
-String Locale_FormatTemperature(int tempCelsius, int celsiusIconIndex, boolean hasValue) {
+String Locale_FormatTemperature(int tempCelsius, int celsiusIconIndex, bool hasValue) {
     String output;
     if (hasValue) 
         output += tempCelsius;

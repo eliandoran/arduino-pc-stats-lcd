@@ -4,4 +4,4 @@
 
 String Locale_FormatTime(DateTime dateTime);
 String Locale_FormatDate(DateTime dateTime);
-String Locale_FormatTemperature(int tempCelsius, int celsiusIconIndex, boolean hasValue);
+String Locale_FormatTemperature(int tempCelsius, int celsiusIconIndex, bool hasValue);
