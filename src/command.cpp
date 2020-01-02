@@ -2,7 +2,9 @@
 #include <string.h>
 #include "util/trace.h"
 #include "command.h"
+
 #include "navigator.h"
+#include "registry.h"
 
 String serialBuffer;
 
@@ -25,6 +27,13 @@ void Command_Exec(String** args, int numArgs) {
     if (commandName.equals(COMMAND_PAGE_JUMP) && numArgs == 2) {
         int pageIndex = atoi(args[1]->c_str());
         Navigator_SetPage(pageIndex);
+        return;
+    }
+
+    if (commandName.equals(COMMAND_PAGE_SET) && numArgs == 3) {
+        int registryIndex = atoi(args[1]->c_str());
+        int value = atoi(args[2]->c_str());
+        Registry_SetValue(registryIndex, value);
         return;
     }
 
