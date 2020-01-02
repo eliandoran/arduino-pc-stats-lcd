@@ -8,6 +8,7 @@
 
 #define REGISTRY_CPU_USAGE          3
 #define REGISTRY_CPU_FREQUENCY      4
+#define REGISTRY_CPU_FAN_SPEED      5
 
 int Registry_GetValue(int index);
 void Registry_SetValue(int index, int value);

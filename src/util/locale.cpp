@@ -71,3 +71,13 @@ String Locale_FormatClockSpeed(int freq, bool hasValue) {
     output += " MHz";
     return output;
 }
+
+String Locale_FormatRotationalSpeed(int speed, bool hasValue) {
+    String output;
+    if (hasValue)
+        output += speed;
+    else
+        output += "----";
+    output += " RPM";
+    return output;
+}
