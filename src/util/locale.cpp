@@ -12,7 +12,7 @@ const char* MONTHS[] = {
     "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
 };
 
-String Locale_FormatTime(DateTime dateTime) {
+String Locale_FormatTime(const DateTime &dateTime) {
     String output;
     uint8_t hour = dateTime.hour();
     uint8_t minute = dateTime.minute();
@@ -32,7 +32,7 @@ String Locale_FormatTime(DateTime dateTime) {
     return output;
 }
 
-String Locale_FormatDate(DateTime dateTime) {
+String Locale_FormatDate(const DateTime &dateTime) {
     String output;
     output += DAYS_OF_THE_WEEK[dateTime.dayOfTheWeek()];
     output += ", ";
