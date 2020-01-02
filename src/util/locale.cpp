@@ -52,6 +52,12 @@ String Locale_FormatTemperature(int tempCelsius, int celsiusIconIndex, bool hasV
     return output;
 }
 
-String Locale_FormatPercentage(int value) {
-    return String(value) + "%";
+String Locale_FormatPercentage(int value, bool hasValue) {
+    String output;
+    if (hasValue)
+        output += value;
+    else
+        output += "--";
+    output += '%';
+    return output;
 }
