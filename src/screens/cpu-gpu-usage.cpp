@@ -13,7 +13,7 @@
 
 #define ICON_CELSIUS_STR "\x2"
 
-void Screen_CPU_GPU(bool initialized) {
+void Screen_CPU_GPU_Usage(bool initialized) {
     if (!initialized) {
         Loop_SetInterval(500);
 
