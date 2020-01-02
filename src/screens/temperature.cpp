@@ -10,10 +10,12 @@
 #define ICON_MOTHERBOARD 2
 #define ICON_CELSIUS_DEGREE 3
 
-static void drawComponent(int icon, int temperature, int x, int width) {
-    LCD_DrawCustomCharacter(icon, x + width / 2, 0);    
+static void drawComponent(int icon, int registryIndex, int x, int width) {
+    int temperature = Registry_GetValue(registryIndex);
+    bool hasValue = Registry_IsSet(registryIndex);
+    String temperatureStr = Locale_FormatTemperature(temperature, ICON_CELSIUS_DEGREE, hasValue);
 
-    String temperatureStr = Locale_FormatTemperature(temperature, ICON_CELSIUS_DEGREE);
+    LCD_DrawCustomCharacter(icon, x + width / 2, 0);    
     LCD_PrintCentered(temperatureStr, x, 1, width);
 }
 
@@ -27,11 +29,7 @@ void Screen_Temperature(bool initialized) {
 
     int width = LCD_COLUMNS / 3;
 
-    int cpuTemp = Registry_GetValue(REGISTRY_TEMP_CPU);
-    int gpuTemp = Registry_GetValue(REGISTRY_TEMP_GPU);
-    int mbTemp = Registry_GetValue(REGISTRY_TEMP_MOTHERBOARD);
-
-    drawComponent(ICON_CPU, cpuTemp, 0, width);
-    drawComponent(ICON_GPU, gpuTemp, 6, width);
-    drawComponent(ICON_MOTHERBOARD, mbTemp, 12, width);    
+    drawComponent(ICON_CPU, REGISTRY_TEMP_CPU, 0, width);
+    drawComponent(ICON_GPU, REGISTRY_TEMP_GPU, 6, width);
+    drawComponent(ICON_MOTHERBOARD, REGISTRY_TEMP_MOTHERBOARD, 12, width);    
 }
