@@ -6,6 +6,8 @@
 #define REGISTRY_TEMP_GPU           1
 #define REGISTRY_TEMP_MOTHERBOARD   2
 
+#define REGISTRY_CPU_USAGE          3
+
 int Registry_GetValue(int index);
 void Registry_SetValue(int index, int value);
 bool Registry_IsSet(int index);

@@ -51,3 +51,7 @@ String Locale_FormatTemperature(int tempCelsius, int celsiusIconIndex, bool hasV
     output += (char)celsiusIconIndex;
     return output;
 }
+
+String Locale_FormatPercentage(int value) {
+    return String(value) + "%";
+}
