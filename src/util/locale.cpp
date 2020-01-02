@@ -61,3 +61,13 @@ String Locale_FormatPercentage(int value, bool hasValue) {
     output += '%';
     return output;
 }
+
+String Locale_FormatClockSpeed(int freq, bool hasValue) {
+    String output;
+    if (hasValue)
+        output += freq;
+    else
+        output += "----";
+    output += " MHz";
+    return output;
+}

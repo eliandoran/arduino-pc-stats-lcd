@@ -7,6 +7,7 @@
 #define REGISTRY_TEMP_MOTHERBOARD   2
 
 #define REGISTRY_CPU_USAGE          3
+#define REGISTRY_CPU_FREQUENCY      4
 
 int Registry_GetValue(int index);
 void Registry_SetValue(int index, int value);
