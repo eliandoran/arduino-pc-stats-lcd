@@ -1,6 +1,7 @@
 #include "lcd.h"
 #include "loop.h"
 #include "screens.h"
+#include "storage.h"
 #include "util/trace.h"
 #include "navigator.h"
 
@@ -17,7 +18,8 @@ const int NUM_PAGES = (sizeof(pages) / sizeof(pages[0]));
 int currentPageIndex;
 
 void Navigator_Start() {
-    Navigator_SetPage(0);
+    int lastPage = Storage_Read(STORAGE_LAST_PAGE);
+    Navigator_SetPage(lastPage);
 }
 
 void Navigator_GoNext() {
@@ -36,4 +38,5 @@ void Navigator_SetPage(int pageIndex) {
 
     LCD_Clear();
     Loop_SetCurrentPage(pages[currentPageIndex]);
+    Storage_Write(STORAGE_LAST_PAGE, currentPageIndex);
 }

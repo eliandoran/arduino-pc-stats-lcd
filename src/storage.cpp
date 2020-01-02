@@ -33,3 +33,13 @@ void Storage_Initialize() {
         TRACE("[STORAGE] Is already initialized.")
     }
 }
+
+uint8_t Storage_Read(int index) {
+    index += STORAGE_START_OFFSET;
+    return EEPROM[index];
+}
+
+void Storage_Write(int index, uint8_t value) {
+    index += STORAGE_START_OFFSET;
+    EEPROM.update(index, value);
+}
