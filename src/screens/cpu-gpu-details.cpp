@@ -28,7 +28,7 @@ void Screen_CPU_Details(bool initialized) {
 
     if (curCpuFreq != lastCpuFreq) {
         bool hasCpuFreq = Registry_IsSet(REGISTRY_CPU_FREQUENCY);
-        LCD_PrintRight(Locale_FormatClockSpeed(curCpuFreq, hasCpuFreq) + " ", 0);
+        LCD_PrintRight(Locale_FormatFrequency(curCpuFreq, hasCpuFreq) + " ", 0);
         lastCpuFreq = curCpuFreq;
     }
 

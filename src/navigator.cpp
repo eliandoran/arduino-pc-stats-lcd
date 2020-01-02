@@ -16,7 +16,7 @@ const int NUM_PAGES = (sizeof(pages) / sizeof(pages[0]));
 int currentPageIndex;
 
 void Navigator_Start() {
-    Navigator_SetPage(0);
+    Navigator_SetPage(3);
 }
 
 void Navigator_GoNext() {
