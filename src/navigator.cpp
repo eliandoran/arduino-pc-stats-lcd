@@ -21,12 +21,12 @@ void Navigator_Start() {
 
 void Navigator_GoNext() {
     TRACE("[NAVIGATOR] Go to next page.");
-    Navigator_SetPage(currentPageIndex + 1);
+    Navigator_SetPage((currentPageIndex + 1) % NUM_PAGES);
 }
 
 void Navigator_GoBack() {
     TRACE("[NAVIGATOR] Go to the previous page.");
-    Navigator_SetPage(currentPageIndex - 1);
+    Navigator_SetPage((currentPageIndex - 1 + NUM_PAGES) % NUM_PAGES);
 }
 
 void Navigator_SetPage(int pageIndex) {
