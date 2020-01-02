@@ -8,7 +8,8 @@ void (*pages[])(bool) = {
     &Screen_Idle,
     &Screen_Temperature,
     &Screen_CPU_GPU_Usage,
-    &Screen_CPU_Details
+    &Screen_CPU_Details,
+    &Screen_GPU_Details
 };
 
 const int NUM_PAGES = (sizeof(pages) / sizeof(pages[0]));
@@ -16,7 +17,7 @@ const int NUM_PAGES = (sizeof(pages) / sizeof(pages[0]));
 int currentPageIndex;
 
 void Navigator_Start() {
-    Navigator_SetPage(3);
+    Navigator_SetPage(0);
 }
 
 void Navigator_GoNext() {

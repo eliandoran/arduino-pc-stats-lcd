@@ -10,6 +10,10 @@
 #define REGISTRY_CPU_FREQUENCY      4
 #define REGISTRY_CPU_FAN_SPEED      5
 
+#define REGISTRY_GPU_USAGE          6
+#define REGISTRY_GPU_FREQUENCY      7
+#define REGISTRY_GPU_FAN_SPEED      8
+
 int Registry_GetValue(int index);
 void Registry_SetValue(int index, int value);
 bool Registry_IsSet(int index);
