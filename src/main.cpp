@@ -10,6 +10,7 @@
 #include "loop.h"
 #include "navigator.h"
 
+// cppcheck-suppress unusedFunction ; used by the Arduino bootloader
 void setup()
 {
     Trace_Initialize();    
@@ -20,7 +21,8 @@ void setup()
     Loop_Enter();
 }
 
+// cppcheck-suppress unusedFunction ; required by the Arduino bootloader
 void loop()
 {    
-	
+    // No action needed.
 }
