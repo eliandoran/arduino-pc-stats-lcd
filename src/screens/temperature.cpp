@@ -1,6 +1,7 @@
 #include "lcd.h"
 #include "config.h"
 #include "screens.h"
+#include "registry.h"
 #include "ui/characters.h"
 #include "util/locale.h"
 
@@ -25,7 +26,12 @@ void Screen_Temperature(bool initialized) {
     }
 
     int width = LCD_COLUMNS / 3;
-    drawComponent(ICON_CPU, 30, 0, width);
-    drawComponent(ICON_GPU, 60, 6, width);
-    drawComponent(ICON_MOTHERBOARD, 90, 12, width);    
+
+    int cpuTemp = Registry_GetValue(REGISTRY_TEMP_CPU);
+    int gpuTemp = Registry_GetValue(REGISTRY_TEMP_GPU);
+    int mbTemp = Registry_GetValue(REGISTRY_TEMP_MOTHERBOARD);
+
+    drawComponent(ICON_CPU, cpuTemp, 0, width);
+    drawComponent(ICON_GPU, gpuTemp, 6, width);
+    drawComponent(ICON_MOTHERBOARD, mbTemp, 12, width);    
 }
