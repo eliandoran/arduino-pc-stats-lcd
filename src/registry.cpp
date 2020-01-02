@@ -1,6 +1,7 @@
 #include "registry.h"
 
 int REGISTRY[REGISTRY_NUM_REGISTERS];
+bool REGISTRY_MAP[REGISTRY_NUM_REGISTERS]; // true indicates that the corresponding index has a value assigned to it.
 
 int Registry_GetValue(int index) {
     if (index < 0 || index >= REGISTRY_NUM_REGISTERS)
@@ -14,4 +15,9 @@ void Registry_SetValue(int index, int value) {
         return;
 
     REGISTRY[index] = value;
+    REGISTRY_MAP[index] = true;
+}
+
+bool Registry_IsSet(int index) {
+    return REGISTRY_MAP[index];
 }

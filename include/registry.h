@@ -8,3 +8,4 @@
 
 int Registry_GetValue(int index);
 void Registry_SetValue(int index, int value);
+bool Registry_IsSet(int index);
