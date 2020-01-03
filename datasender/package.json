@@ -1,0 +1,14 @@
+{
+  "name": "arduino-pc-stats.data-sender",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elian Doran <doran.adoris.elian@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "serialport": "^8.0.6"
+  }
+}
