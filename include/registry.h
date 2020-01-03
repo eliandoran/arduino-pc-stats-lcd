@@ -15,5 +15,6 @@
 #define REGISTRY_GPU_FAN_SPEED      8
 
 int Registry_GetValue(int index);
+int Registry_GetValue(int index, int defaultValue);
 void Registry_SetValue(int index, int value);
 bool Registry_IsSet(int index);

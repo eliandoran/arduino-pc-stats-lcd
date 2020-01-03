@@ -17,8 +17,6 @@ void Screen_CPU_GPU_Usage(bool initialized) {
     if (!initialized) {
         Loop_SetInterval(500);
 
-        randomSeed(millis());
-
         LCD_SetCustomCharacter(ICON_CPU, CHAR_CPU);
         LCD_SetCustomCharacter(ICON_GPU, CHAR_GPU);
         LCD_SetCustomCharacter(ICON_CELSIUS, CHAR_CELSIUS_DEGREE);
@@ -31,8 +29,10 @@ void Screen_CPU_GPU_Usage(bool initialized) {
     LCD_DrawCustomCharacter(ICON_GPU, 0, 1);        
 
     // Display an horizontal indicator of CPU and GPU usage.
-    HProgress_Draw(2, 0, 10, HProgress_GetValue(0, rand(), RAND_MAX));
-    HProgress_Draw(2, 1, 10, HProgress_GetValue(0, rand(), RAND_MAX));
+    int cpuUsage = Registry_GetValue(REGISTRY_CPU_USAGE, 0);
+    int gpuUsage = Registry_GetValue(REGISTRY_GPU_USAGE, 0);
+    HProgress_Draw(2, 0, 10, HProgress_GetValue(0, cpuUsage, 100));
+    HProgress_Draw(2, 1, 10, HProgress_GetValue(0, gpuUsage, 100));
 
     // Display the temperatures.
     bool hasCpuTemp = Registry_IsSet(REGISTRY_TEMP_CPU);
