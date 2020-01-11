@@ -1,6 +1,11 @@
 const SerialPort = require("serialport");
 const Readline = require("@serialport/parser-readline");
 
+const map = require("./mapper");
+const command = require("./command");
+
+const parsedData = require("../provider-nzxtcam/parsed.json");
+
 console.time("connect");
 
 const port = new SerialPort("COM3", {
@@ -14,5 +19,10 @@ parser.on("data", (data) => {
 
     if (data == "Ready.") {
         console.timeEnd("connect");
+
+        command.setRegister(port, 0, 50);
+
+        const output = map(parsedData);
+        console.log(output);
     }
 });

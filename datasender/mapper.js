@@ -27,6 +27,4 @@ function map(data) {
     return output;
 }
 
-const parsedData = require("../provider-nzxtcam/parsed.json");
-const output = map(parsedData);
-console.log(output);
+module.exports = map;
