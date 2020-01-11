@@ -2,5 +2,13 @@
     "cpus.0.temperature.current": {
         "id": 0,
         "type": "int"
+    },
+    "gpus.0.temperature.current": {
+        "id": 1,
+        "type": "int"
+    },
+    "motherboard.temperature.current": {
+        "id": 2,
+        "type": "int"
     }
 }
