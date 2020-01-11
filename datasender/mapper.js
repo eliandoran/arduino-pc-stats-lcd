@@ -1,12 +1,21 @@
 const config = require("./mapping.json");
 const objectPath = require("object-path");
 
+const typeMappings = {
+    "int": Math.round
+};
+
 function map(data) {
-    let output = {};
+    let output = { };
 
     for (const path of Object.keys(config)) {
-        const value = objectPath.get(data, path);
+        let value = objectPath.get(data, path);
         const { id, type } = config[path];
+
+        const typeMapping = typeMappings[type];
+        if (typeMapping !== undefined) {
+            value = typeMapping(value);
+        }
 
         output[id] = value;
     }
