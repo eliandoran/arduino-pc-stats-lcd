@@ -21,7 +21,8 @@ monitor.on('refresh', (refresh) => {
         return {
             usage: cpu.load,
             freq: parseInterval(cpu, "frequency"),
-            fanSpeed: parseInterval(cpu, "fanSpeed")
+            fanSpeed: parseInterval(cpu, "fanSpeed"),
+            temperature: parseInterval(cpu, "temperature")
         };
     });
 
