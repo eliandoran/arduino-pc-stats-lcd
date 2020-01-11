@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <string.h>
+#include <ctype.h>
 #include "util/trace.h"
 #include "command.h"
 
@@ -64,6 +65,25 @@ void Command_ParseExec(String command) {
     free(args);
 }
 
+void Command_TraceBuffer() {
+    if (serialBuffer.length() > 0) {
+        String debugLog = String("Buffer: ");
+        for (int i=0; i<serialBuffer.length(); i++) {
+            char ch = serialBuffer[i];
+
+            if (isprint(ch)) {
+                debugLog += ch;
+            } else {
+                debugLog += '[';
+                debugLog += (int)ch;
+                debugLog += ']';
+            };
+        }
+
+        TRACE_VAL(debugLog);
+    }    
+}
+
 void Command_Check() {
     if (Serial.available() > 0) {
         String inputStr = Serial.readString();
@@ -72,6 +92,8 @@ void Command_Check() {
 
     int newLineIndex = serialBuffer.indexOf('\n');
     while (serialBuffer.length() != 0 && newLineIndex > 0) {
+        Command_TraceBuffer();
+
         // Execute command if non-empty.
         if (newLineIndex > 1) {
             String command = serialBuffer.substring(0, newLineIndex - 1);
