@@ -1,4 +1,4 @@
-const FLUSH_INTERVAL = 10;
+const FLUSH_INTERVAL = 2;
 
 class CommandSender {
     constructor(port) {
