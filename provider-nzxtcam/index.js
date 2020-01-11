@@ -26,7 +26,12 @@ monitor.on('refresh', (refresh) => {
         };
     });
 
-    console.log(data);
+    data.gpus = pc.gpus.map((gpu) => ({
+        usage: gpu.load,
+        freq: parseInterval(gpu, "frequency"),
+        fanSpeed: parseInterval(gpu, "fanSpeed"),
+        temperature: parseInterval(gpu, "temperature")
+    }));
 
     require("fs").writeFile("D:\\Projects\\Arduino PC Stats LCD\\provider-nzxtcam\\data.json", JSON.stringify(pc, null, 4), () => {});
     require("fs").writeFile("D:\\Projects\\Arduino PC Stats LCD\\provider-nzxtcam\\parsed.json", JSON.stringify(data, null, 4), () => {});
