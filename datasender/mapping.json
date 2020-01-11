@@ -1,0 +1,6 @@
+{
+    "cpus.0.temperature.current": {
+        "id": 0,
+        "type": "int"
+    }
+}
