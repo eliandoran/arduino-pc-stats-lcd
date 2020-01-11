@@ -22,5 +22,17 @@
     "cpus.0.fanSpeed.current": {
         "id": 5,
         "type": "int"
+    },
+    "gpus.0.usage": {
+        "id": 6,
+        "type": "intPercentage"
+    },
+    "gpus.0.freq.current": {
+        "id": 7,
+        "type": "int"
+    },
+    "gpus.0.fanSpeed.current": {
+        "id": 8,
+        "type": "int"
     }
 }
