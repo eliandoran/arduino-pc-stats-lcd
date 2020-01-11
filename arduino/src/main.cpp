@@ -22,6 +22,9 @@ void setup()
     LCD_Initialize();      
 
     Navigator_Start();
+
+    TRACE("Ready.");
+
     Loop_Enter();
 }
 
