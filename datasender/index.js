@@ -5,6 +5,10 @@ const map = require("./mapper");
 const CommandSender = require("./command");
 
 class DataSender {
+    constructor() {
+        this.lastData = {};
+    }
+
     start(callback) {
         console.time("connect");
 
@@ -28,9 +32,15 @@ class DataSender {
 
     sendData(data) {
         const output = map(data);
-        for (const id of Object.keys(output)) {
+        for (const id of Object.keys(output)) {            
             const value = output[id];
+
+            if (value == this.lastData[id]) {
+                continue;
+            }
+
             this.command.setRegister(id, value);
+            this.lastData[id] = value;
         }
     }
 }
