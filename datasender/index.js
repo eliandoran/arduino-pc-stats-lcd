@@ -15,14 +15,17 @@ const port = new SerialPort("COM3", {
 const parser = port.pipe(new Readline());
 parser.on("data", (data) => {
     data = data.toString("utf8").trim();    
-    console.log("board:", data);
+    console.log("recv:", data);
 
     if (data == "Ready.") {
-        console.timeEnd("connect");
-
-        command.setRegister(port, 0, 50);
+        console.timeEnd("connect");        
 
         const output = map(parsedData);
+        for (const id of Object.keys(output)) {
+            const value = output[id];
+            command.setRegister(port, id, value);
+        }
+
         console.log(output);
     }
 });

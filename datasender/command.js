@@ -1,6 +1,7 @@
 function sendCommand(port, command, ...args) {   
-    output = [ command, ...args ].join(" ");
-    port.write(output + "\r\n");
+    output = [ command, ...args ].join(" ") + "\r\n";
+    console.log("send:", output);
+    port.write(output);
 }
 
 function setRegister(port, id, value) {
