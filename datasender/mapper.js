@@ -12,6 +12,9 @@ function map(data) {
         let value = objectPath.get(data, path);
         const { id, type } = config[path];
 
+        if (value === undefined)
+            continue;
+
         const typeMapping = typeMappings[type];
         if (typeMapping !== undefined) {
             value = typeMapping(value);
