@@ -1,0 +1,2344 @@
+{
+    "cpus": [
+        {
+            "id": 34603020,
+            "manufacturer": "AMD",
+            "name": "Ryzen 9 3900X",
+            "codeName": "Matisse",
+            "package": "Socket AM4 (1331)",
+            "tdp": 105,
+            "cores": 12,
+            "threads": 24,
+            "temperature": 68.875,
+            "minTemperature": null,
+            "maxTemperature": null,
+            "stockFrequency": 3800,
+            "frequency": 4192,
+            "minFrequency": 2778,
+            "maxFrequency": 4216,
+            "fanSpeed": 1159,
+            "minFanSpeed": 822,
+            "maxFanSpeed": 1371,
+            "load": 0.024480020627379417,
+            "coreInfo": [
+                {
+                    "frequency": 4191.50390625,
+                    "temperature": 68.875,
+                    "threads": 2,
+                    "threadInfo": [
+                        {
+                            "load": 0.07849480211734772
+                        },
+                        {
+                            "load": 0.00040113902650773525
+                        }
+                    ]
+                },
+                {
+                    "frequency": 4191.50390625,
+                    "temperature": 68.875,
+                    "threads": 2,
+                    "threadInfo": [
+                        {
+                            "load": 0.12535099685192108
+                        },
+                        {
+                            "load": 0.04725733399391174
+                        }
+                    ]
+                },
+                {
+                    "frequency": 4191.50390625,
+                    "temperature": 68.875,
+                    "threads": 2,
+                    "threadInfo": [
+                        {
+                            "load": 0.07849480211734772
+                        },
+                        {
+                            "load": 0.00040113902650773525
+                        }
+                    ]
+                },
+                {
+                    "frequency": 4191.50390625,
+                    "temperature": 68.875,
+                    "threads": 2,
+                    "threadInfo": [
+                        {
+                            "load": 0.00040113902650773525
+                        },
+                        {
+                            "load": 0.00040113902650773525
+                        }
+                    ]
+                },
+                {
+                    "frequency": 4191.50390625,
+                    "temperature": 68.875,
+                    "threads": 2,
+                    "threadInfo": [
+                        {
+                            "load": 0.06287606805562973
+                        },
+                        {
+                            "load": 0.00040113902650773525
+                        }
+                    ]
+                },
+                {
+                    "frequency": 4166.5546875,
+                    "temperature": 68.875,
+                    "threads": 2,
+                    "threadInfo": [
+                        {
+                            "load": 0.031638603657484055
+                        },
+                        {
+                            "load": 0.016019871458411217
+                        }
+                    ]
+                },
+                {
+                    "frequency": 4166.5546875,
+                    "temperature": 68.875,
+                    "threads": 2,
+                    "threadInfo": [
+                        {
+                            "load": 0.016019871458411217
+                        },
+                        {
+                            "load": 0.016019871458411217
+                        }
+                    ]
+                },
+                {
+                    "frequency": 4166.5546875,
+                    "temperature": 68.875,
+                    "threads": 2,
+                    "threadInfo": [
+                        {
+                            "load": 0.016019871458411217
+                        },
+                        {
+                            "load": 0.016019871458411217
+                        }
+                    ]
+                },
+                {
+                    "frequency": 2794.3359375,
+                    "temperature": 68.875,
+                    "threads": 2,
+                    "threadInfo": [
+                        {
+                            "load": 0.00040113902650773525
+                        },
+                        {
+                            "load": 0.00040113902650773525
+                        }
+                    ]
+                },
+                {
+                    "frequency": 4166.5546875,
+                    "temperature": 68.875,
+                    "threads": 2,
+                    "threadInfo": [
+                        {
+                            "load": 0.016019871458411217
+                        },
+                        {
+                            "load": 0.00040113902650773525
+                        }
+                    ]
+                },
+                {
+                    "frequency": 4191.50390625,
+                    "temperature": 68.875,
+                    "threads": 2,
+                    "threadInfo": [
+                        {
+                            "load": 0.06287606805562973
+                        },
+                        {
+                            "load": 0.00040113902650773525
+                        }
+                    ]
+                },
+                {
+                    "frequency": 2777.703125,
+                    "temperature": 68.875,
+                    "threads": 2,
+                    "threadInfo": [
+                        {
+                            "load": 0.00040113902650773525
+                        },
+                        {
+                            "load": 0.00040113902650773525
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "gpus": [
+        {
+            "id": 55537,
+            "name": "AMD Radeon RX 5700 XT",
+            "tdp": null,
+            "temperature": 37,
+            "minTemperature": 36,
+            "maxTemperature": 37,
+            "stockFrequency": 2049,
+            "frequency": 20,
+            "minFrequency": 18,
+            "maxFrequency": 116,
+            "fanSpeed": 1157,
+            "minFanSpeed": 1156,
+            "maxFanSpeed": 1157,
+            "load": 0.04586238041520119,
+            "memoryFrequency": 200,
+            "minMemoryFrequency": 200,
+            "maxMemoryFrequency": 200,
+            "coreVoltage": 725,
+            "minCoreVoltage": 725,
+            "maxCoreVoltage": 750,
+            "targetFrequency": 2049,
+            "targetMemoryFrequency": 1750,
+            "targetTemperature": 0,
+            "targetPower": {
+                "kind": "percentage",
+                "value": 0
+            },
+            "overclockingCapabilities": {
+                "coreClockOverclock": true,
+                "coreClockRangeType": "Absolute",
+                "coreClockMax": 2150,
+                "coreClockMin": 800,
+                "coreClockDefault": 2049,
+                "memClockOverclock": true,
+                "memClockRangeType": "Absolute",
+                "memClockMax": 1900,
+                "memClockMin": 1750,
+                "memClockDefault": 1750,
+                "clockNumPerformanceLevels": null,
+                "temperatureOverclock": false,
+                "powerOverclock": true,
+                "powerRangeType": "Offset",
+                "powerMax": {
+                    "kind": "percentage",
+                    "value": 50
+                },
+                "powerMin": {
+                    "kind": "percentage",
+                    "value": -50
+                },
+                "powerDefault": {
+                    "kind": "percentage",
+                    "value": 0
+                }
+            }
+        }
+    ],
+    "ram": {
+        "size": 32683,
+        "used": 7849,
+        "modules": [
+            {
+                "model": "Corsair CMK32GX4M2B3200C16",
+                "moduleType": "DDR4",
+                "size": 16384,
+                "stockFrequency": 1066,
+                "frequency": 1065,
+                "casLatency": 15,
+                "rasToCASDelay": 15,
+                "rasPrecharge": 15,
+                "tRAS": 36
+            },
+            {
+                "model": "Corsair CMK32GX4M2B3200C16",
+                "moduleType": "DDR4",
+                "size": 16384,
+                "stockFrequency": 1066,
+                "frequency": 1065,
+                "casLatency": 15,
+                "rasToCASDelay": 15,
+                "rasPrecharge": 15,
+                "tRAS": 36
+            }
+        ]
+    },
+    "storage": [
+        {
+            "description": "WD My Passport 25E1 USB Device",
+            "size": 1907697,
+            "volumes": [
+                {
+                    "size": 1764644,
+                    "used": 380927,
+                    "mountPoints": [
+                        "E:\\"
+                    ],
+                    "format": "NTFS"
+                }
+            ]
+        },
+        {
+            "description": "GIGABYTE GP-ASM2NE6100TTTD",
+            "size": 953869,
+            "volumes": [
+                {
+                    "size": 614399,
+                    "used": 258283,
+                    "mountPoints": [
+                        "C:\\"
+                    ],
+                    "format": "NTFS"
+                }
+            ]
+        },
+        {
+            "description": "WDC WD4005FZBX-00K5WB0",
+            "size": 3815447,
+            "volumes": [
+                {
+                    "size": 3815429,
+                    "used": 566965,
+                    "mountPoints": [
+                        "D:\\"
+                    ],
+                    "format": "NTFS"
+                }
+            ]
+        }
+    ],
+    "network": [
+        {
+            "name": "Ethernet",
+            "isWlan": false,
+            "connectionType": "Ethernet",
+            "sendSpeed": 100000000,
+            "receiveSpeed": 100000000,
+            "wlanSignalStrength": null,
+            "sentBps": 0,
+            "receivedBps": 213,
+            "ipv4Addresses": [
+                "192.168.1.140"
+            ],
+            "ipv6Addresses": []
+        },
+        {
+            "name": "Wi-Fi",
+            "isWlan": true,
+            "connectionType": "Wireless",
+            "sendSpeed": 0,
+            "receiveSpeed": 0,
+            "wlanSignalStrength": null,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "ipv4Addresses": [],
+            "ipv6Addresses": []
+        }
+    ],
+    "input": [
+        {
+            "type": "Keyboard",
+            "product_id": 5842,
+            "vendor_id": 2385
+        },
+        {
+            "type": "Keyboard",
+            "product_id": 81,
+            "vendor_id": 9494
+        },
+        {
+            "type": "Keyboard",
+            "product_id": 5842,
+            "vendor_id": 2385
+        },
+        {
+            "type": "Mouse",
+            "product_id": 5820,
+            "vendor_id": 2385
+        }
+    ],
+    "mainboard": {
+        "vendor": "ASUSTeK COMPUTER INC.",
+        "model": "PRIME X570-PRO",
+        "biosVersion": "0408",
+        "biosDate": "05/30/2019",
+        "northBridge": "Ryzen SOC",
+        "southBridge": "X570"
+    },
+    "audio": {
+        "devices": [
+            {
+                "id": "{0.0.0.00000000}.{0a3cfcb0-744e-4a44-948b-42911cb3510c}",
+                "friendlyName": "Realtek High Definition Audio",
+                "description": "Realtek Digital Output",
+                "format": "SPDIF",
+                "channels": ""
+            },
+            {
+                "id": "{0.0.0.00000000}.{1bba1e74-1402-40f2-875f-d5a99e29589e}",
+                "friendlyName": "2- AMD High Definition Audio Device",
+                "description": "5 - C49J89x",
+                "format": "",
+                "channels": ""
+            }
+        ]
+    },
+    "processes": [
+        {
+            "id": 12472,
+            "killToken": 4294979768,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 0.91015625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4100,
+            "killToken": 4294971396,
+            "name": "AsusFanControlService",
+            "cpuUsage": 0,
+            "ramUsage": 2.65234375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 8436,
+            "killToken": 4294975732,
+            "name": "WmiPrvSE",
+            "cpuUsage": 0,
+            "ramUsage": 3.76953125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 13920,
+            "killToken": 4294981216,
+            "name": "SgrmBroker",
+            "cpuUsage": 0,
+            "ramUsage": 3.04296875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6952,
+            "killToken": 4294974248,
+            "name": "NZXT CAM",
+            "cpuUsage": 0.0013015610168972524,
+            "ramUsage": 402.19140625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2156,
+            "killToken": 4294969452,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.515625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 10620,
+            "killToken": 4294977916,
+            "name": "CompPkgSrv",
+            "cpuUsage": 0,
+            "ramUsage": 1.4140625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3156,
+            "killToken": 4294970452,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.2109375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 9064,
+            "killToken": 4294976360,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.76171875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 756,
+            "killToken": 4294968052,
+            "name": "lsass",
+            "cpuUsage": 0,
+            "ramUsage": 5.7109375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6052,
+            "killToken": 4294973348,
+            "name": "Microsoft.VSCode.CPP.Extension",
+            "cpuUsage": 0,
+            "ramUsage": 22.8359375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3212,
+            "killToken": 4294970508,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.26171875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3760,
+            "killToken": 4294971056,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.390625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2548,
+            "killToken": 4294969844,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.95703125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2940,
+            "killToken": 4294970236,
+            "name": "ApplicationFrameHost",
+            "cpuUsage": 0,
+            "ramUsage": 13.93359375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 13432,
+            "killToken": 4294980728,
+            "name": "cam_helper",
+            "cpuUsage": 0.0013015610168972524,
+            "ramUsage": 12.64453125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2400,
+            "killToken": 4294969696,
+            "name": "Memory Compression",
+            "cpuUsage": 0,
+            "ramUsage": 1.26171875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 8488,
+            "killToken": 4294975784,
+            "name": "Microsoft.VSCode.CPP.Extension",
+            "cpuUsage": 0,
+            "ramUsage": 35.11328125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 9152,
+            "killToken": 4294976448,
+            "name": "RuntimeBroker",
+            "cpuUsage": 0,
+            "ramUsage": 0.95703125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 7412,
+            "killToken": 4294974708,
+            "name": "SearchIndexer",
+            "cpuUsage": 0,
+            "ramUsage": 22.8828125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 7064,
+            "killToken": 4294974360,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 3.3046875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 11852,
+            "killToken": 4294979148,
+            "name": "steamwebhelper",
+            "cpuUsage": 0,
+            "ramUsage": 104.26171875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 152,
+            "killToken": 4294967448,
+            "name": "winlogon",
+            "cpuUsage": 0,
+            "ramUsage": 1.6015625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3128,
+            "killToken": 4294970424,
+            "name": "Service_KMS",
+            "cpuUsage": 0,
+            "ramUsage": 9.96484375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6632,
+            "killToken": 4294973928,
+            "name": "audiodg",
+            "cpuUsage": 0,
+            "ramUsage": 4.92578125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2360,
+            "killToken": 4294969656,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.05859375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 5908,
+            "killToken": 4294973204,
+            "name": "DipAwayMode",
+            "cpuUsage": 0,
+            "ramUsage": 0.34765625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2792,
+            "killToken": 4294970088,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.93359375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3952,
+            "killToken": 4294971248,
+            "name": "OneDrive",
+            "cpuUsage": 0,
+            "ramUsage": 16.91796875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1460,
+            "killToken": 4294968756,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 0.8828125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1100,
+            "killToken": 4294968396,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 8.046875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4532,
+            "killToken": 4294971828,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.71875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 8936,
+            "killToken": 4294976232,
+            "name": "dllhost",
+            "cpuUsage": 0,
+            "ramUsage": 1.6953125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2916,
+            "killToken": 4294970212,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.15234375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1340,
+            "killToken": 4294968636,
+            "name": "dwm",
+            "cpuUsage": 0.0006507805084486262,
+            "ramUsage": 28.78515625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 7744,
+            "killToken": 4294975040,
+            "name": "MicrosoftEdgeCP",
+            "cpuUsage": 0,
+            "ramUsage": 4.11328125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4076,
+            "killToken": 4294971372,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.7578125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4264,
+            "killToken": 4294971560,
+            "name": "OfficeClickToRun",
+            "cpuUsage": 0,
+            "ramUsage": 27.83984375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 14628,
+            "killToken": 4294981924,
+            "name": "QtWebEngineProcess",
+            "cpuUsage": 0,
+            "ramUsage": 20.7109375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2808,
+            "killToken": 4294970104,
+            "name": "SearchFilterHost",
+            "cpuUsage": 0,
+            "ramUsage": 0.875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 11892,
+            "killToken": 4294979188,
+            "name": "SearchProtocolHost",
+            "cpuUsage": 0,
+            "ramUsage": 1.765625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 7592,
+            "killToken": 4294974888,
+            "name": "bash",
+            "cpuUsage": 0,
+            "ramUsage": 7.21875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1960,
+            "killToken": 4294969256,
+            "name": "browser_broker",
+            "cpuUsage": 0,
+            "ramUsage": 1.1796875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 10788,
+            "killToken": 4294978084,
+            "name": "ArmourySwAgent",
+            "cpuUsage": 0,
+            "ramUsage": 0.53125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 9740,
+            "killToken": 4294977036,
+            "name": "schtasks",
+            "cpuUsage": 0,
+            "ramUsage": 0.28515625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2908,
+            "killToken": 4294970204,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.80859375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3136,
+            "killToken": 4294970432,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 4.203125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 7932,
+            "killToken": 4294975228,
+            "name": "StartMenuExperienceHost",
+            "cpuUsage": 0,
+            "ramUsage": 27.078125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2960,
+            "killToken": 4294970256,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.16015625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1072,
+            "killToken": 4294968368,
+            "name": "conhost",
+            "cpuUsage": 0,
+            "ramUsage": 5.859375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6748,
+            "killToken": 4294974044,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 3.1640625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 7728,
+            "killToken": 4294975024,
+            "name": "SystemSettings",
+            "cpuUsage": 0,
+            "ramUsage": 0.17578125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4092,
+            "killToken": 4294971388,
+            "name": "service",
+            "cpuUsage": 0,
+            "ramUsage": 1.390625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4120,
+            "killToken": 4294971416,
+            "name": "dasHost",
+            "cpuUsage": 0,
+            "ramUsage": 3.1796875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 13148,
+            "killToken": 4294980444,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 3.703125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 11908,
+            "killToken": 4294979204,
+            "name": "SteamService",
+            "cpuUsage": 0,
+            "ramUsage": 5.703125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2220,
+            "killToken": 4294969516,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.84765625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 16356,
+            "killToken": 4294983652,
+            "name": "CodeHelper",
+            "cpuUsage": 0,
+            "ramUsage": 2.5625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 10684,
+            "killToken": 4294977980,
+            "name": "Code",
+            "cpuUsage": 0.011063268643626646,
+            "ramUsage": 1189.94140625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0.004413165617734194
+        },
+        {
+            "id": 3328,
+            "killToken": 4294970624,
+            "name": "nordvpn-service",
+            "cpuUsage": 0,
+            "ramUsage": 13.59765625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 8120,
+            "killToken": 4294975416,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.23828125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3176,
+            "killToken": 4294970472,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 8.01953125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1752,
+            "killToken": 4294969048,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.04296875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 7072,
+            "killToken": 4294974368,
+            "name": "ArmouryCrate.UserSessionHelper",
+            "cpuUsage": 0,
+            "ramUsage": 8.55859375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 216,
+            "killToken": 4294967512,
+            "name": "Registry",
+            "cpuUsage": 0,
+            "ramUsage": 9.67578125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4044,
+            "killToken": 4294971340,
+            "name": "atkexComSvc",
+            "cpuUsage": 0,
+            "ramUsage": 6.234375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 752,
+            "killToken": 4294968048,
+            "name": "services",
+            "cpuUsage": 0,
+            "ramUsage": 4.50390625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 7116,
+            "killToken": 4294974412,
+            "name": "sihost",
+            "cpuUsage": 0,
+            "ramUsage": 5.2421875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4148,
+            "killToken": 4294971444,
+            "name": "LightingService",
+            "cpuUsage": 0,
+            "ramUsage": 5.01171875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2236,
+            "killToken": 4294969532,
+            "name": "atieclxx",
+            "cpuUsage": 0,
+            "ramUsage": 1.84765625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 13904,
+            "killToken": 4294981200,
+            "name": "amdow",
+            "cpuUsage": 0,
+            "ramUsage": 0.59765625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 9320,
+            "killToken": 4294976616,
+            "name": "conhost",
+            "cpuUsage": 0,
+            "ramUsage": 6.13671875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1076,
+            "killToken": 4294968372,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 0.6171875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1508,
+            "killToken": 4294968804,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.8984375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 14944,
+            "killToken": 4294982240,
+            "name": "RuntimeBroker",
+            "cpuUsage": 0,
+            "ramUsage": 3.12890625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2900,
+            "killToken": 4294970196,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 5.58984375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 10484,
+            "killToken": 4294977780,
+            "name": "nextcloud",
+            "cpuUsage": 0,
+            "ramUsage": 44.50390625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 15780,
+            "killToken": 4294983076,
+            "name": "platformio",
+            "cpuUsage": 0,
+            "ramUsage": 0.62890625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4068,
+            "killToken": 4294971364,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.1875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4060,
+            "killToken": 4294971356,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 13.7109375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3544,
+            "killToken": 4294970840,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 11.61328125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 13744,
+            "killToken": 4294981040,
+            "name": "AMDRSServ",
+            "cpuUsage": 0,
+            "ramUsage": 18.57421875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 8800,
+            "killToken": 4294976096,
+            "name": "YourPhone",
+            "cpuUsage": 0,
+            "ramUsage": 0.484375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1944,
+            "killToken": 4294969240,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 4.375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 11280,
+            "killToken": 4294978576,
+            "name": "RuntimeBroker",
+            "cpuUsage": 0,
+            "ramUsage": 1.09765625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 9336,
+            "killToken": 4294976632,
+            "name": "firefox",
+            "cpuUsage": 0.004555463559140383,
+            "ramUsage": 1365.09375,
+            "sentBps": 49,
+            "receivedBps": 335,
+            "gpuUsage": 0.026713484898209572
+        },
+        {
+            "id": 1524,
+            "killToken": 4294968820,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.421875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4084,
+            "killToken": 4294971380,
+            "name": "ArmouryCrate.Service",
+            "cpuUsage": 0,
+            "ramUsage": 5.83203125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 944,
+            "killToken": 4294968240,
+            "name": "Wraith Prism HID",
+            "cpuUsage": 0,
+            "ramUsage": 1.45703125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2600,
+            "killToken": 4294969896,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.35546875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 5820,
+            "killToken": 4294973116,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.234375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6496,
+            "killToken": 4294973792,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.265625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6388,
+            "killToken": 4294973684,
+            "name": "asus_framework",
+            "cpuUsage": 0,
+            "ramUsage": 11.25,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2212,
+            "killToken": 4294969508,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 0.90234375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 11120,
+            "killToken": 4294978416,
+            "name": "conhost",
+            "cpuUsage": 0,
+            "ramUsage": 6.1796875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6596,
+            "killToken": 4294973892,
+            "name": "ctfmon",
+            "cpuUsage": 0,
+            "ramUsage": 5.16796875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 7876,
+            "killToken": 4294975172,
+            "name": "bash",
+            "cpuUsage": 0,
+            "ramUsage": 4.125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 964,
+            "killToken": 4294968260,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.70703125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 13400,
+            "killToken": 4294980696,
+            "name": "jusched",
+            "cpuUsage": 0,
+            "ramUsage": 1.0859375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2972,
+            "killToken": 4294970268,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.8046875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 9760,
+            "killToken": 4294977056,
+            "name": "conhost",
+            "cpuUsage": 0,
+            "ramUsage": 0.21484375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4036,
+            "killToken": 4294971332,
+            "name": "AsSysCtrlService",
+            "cpuUsage": 0,
+            "ramUsage": 0.99609375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3268,
+            "killToken": 4294970564,
+            "name": "spoolsv",
+            "cpuUsage": 0,
+            "ramUsage": 4.34765625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1664,
+            "killToken": 4294968960,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.0546875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 17048,
+            "killToken": 4294984344,
+            "name": "Microsoft.VSCode.CPP.IntelliSense.Msvc",
+            "cpuUsage": 0,
+            "ramUsage": 3.3046875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 7468,
+            "killToken": 4294974764,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.42578125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2228,
+            "killToken": 4294969524,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.40234375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 12088,
+            "killToken": 4294979384,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.5390625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 12188,
+            "killToken": 4294979484,
+            "name": "Telegram",
+            "cpuUsage": 0,
+            "ramUsage": 105.92578125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1124,
+            "killToken": 4294968420,
+            "name": "fontdrvhost",
+            "cpuUsage": 0,
+            "ramUsage": 1.21875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 9412,
+            "killToken": 4294976708,
+            "name": "schtasks",
+            "cpuUsage": 0,
+            "ramUsage": 0.2890625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1272,
+            "killToken": 4294968568,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.0703125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2448,
+            "killToken": 4294969744,
+            "name": "python",
+            "cpuUsage": 0,
+            "ramUsage": 47.56640625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4700,
+            "killToken": 4294971996,
+            "name": "WmiPrvSE",
+            "cpuUsage": 0,
+            "ramUsage": 1.80859375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4052,
+            "killToken": 4294971348,
+            "name": "DbxSvc",
+            "cpuUsage": 0,
+            "ramUsage": 1.5625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6312,
+            "killToken": 4294973608,
+            "name": "EzUpdt",
+            "cpuUsage": 0,
+            "ramUsage": 0.50390625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 8068,
+            "killToken": 4294975364,
+            "name": "RuntimeBroker",
+            "cpuUsage": 0,
+            "ramUsage": 7.56640625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 12028,
+            "killToken": 4294979324,
+            "name": "CCleaner64",
+            "cpuUsage": 0,
+            "ramUsage": 4.05859375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4008,
+            "killToken": 4294971304,
+            "name": "P508PowerAgent",
+            "cpuUsage": 0,
+            "ramUsage": 3.9921875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 7080,
+            "killToken": 4294974376,
+            "name": "conhost",
+            "cpuUsage": 0,
+            "ramUsage": 5.8515625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 7232,
+            "killToken": 4294974528,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 0.9609375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 11152,
+            "killToken": 4294978448,
+            "name": "ShellExperienceHost",
+            "cpuUsage": 0,
+            "ramUsage": 11.48046875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 16600,
+            "killToken": 4294983896,
+            "name": "Microsoft.VSCode.CPP.IntelliSense.Msvc",
+            "cpuUsage": 0,
+            "ramUsage": 3.3125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 13632,
+            "killToken": 4294980928,
+            "name": "QtWebEngineProcess",
+            "cpuUsage": 0,
+            "ramUsage": 19.80859375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 9428,
+            "killToken": 4294976724,
+            "name": "conhost",
+            "cpuUsage": 0,
+            "ramUsage": 0.21875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 560,
+            "killToken": 4294967856,
+            "name": "smss",
+            "cpuUsage": 0,
+            "ramUsage": 0.28515625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1224,
+            "killToken": 4294968520,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 6.72265625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 8616,
+            "killToken": 4294975912,
+            "name": "AsPowerBar",
+            "cpuUsage": 0,
+            "ramUsage": 0.28515625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3084,
+            "killToken": 4294970380,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 3.25390625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 14728,
+            "killToken": 4294982024,
+            "name": "conhost",
+            "cpuUsage": 0,
+            "ramUsage": 5.86328125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 5816,
+            "killToken": 4294973112,
+            "name": "AISuite3",
+            "cpuUsage": 0,
+            "ramUsage": 1.91015625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4756,
+            "killToken": 4294972052,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 0.85546875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1452,
+            "killToken": 4294968748,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 5.65234375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 14364,
+            "killToken": 4294981660,
+            "name": "QtWebEngineProcess",
+            "cpuUsage": 0,
+            "ramUsage": 23.24609375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6884,
+            "killToken": 4294974180,
+            "name": "explorer",
+            "cpuUsage": 0,
+            "ramUsage": 71.328125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1776,
+            "killToken": 4294969072,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 12.7890625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2492,
+            "killToken": 4294969788,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.32421875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6896,
+            "killToken": 4294974192,
+            "name": "SearchUI",
+            "cpuUsage": 0,
+            "ramUsage": 89.58203125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1952,
+            "killToken": 4294969248,
+            "name": "atiesrxx",
+            "cpuUsage": 0,
+            "ramUsage": 1.01953125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2440,
+            "killToken": 4294969736,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.40625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 8948,
+            "killToken": 4294976244,
+            "name": "RuntimeBroker",
+            "cpuUsage": 0,
+            "ramUsage": 2.87109375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 8156,
+            "killToken": 4294975452,
+            "name": "RuntimeBroker",
+            "cpuUsage": 0,
+            "ramUsage": 3.4296875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 14432,
+            "killToken": 4294981728,
+            "name": "conhost",
+            "cpuUsage": 0,
+            "ramUsage": 5.8515625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 12668,
+            "killToken": 4294979964,
+            "name": "NordVPN",
+            "cpuUsage": 0,
+            "ramUsage": 146.90625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 10892,
+            "killToken": 4294978188,
+            "name": "conhost",
+            "cpuUsage": 0.0006507805084486262,
+            "ramUsage": 0.96484375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 772,
+            "killToken": 4294968068,
+            "name": "CodeHelper",
+            "cpuUsage": 0,
+            "ramUsage": 13.62109375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4,
+            "killToken": 4294967300,
+            "name": "System",
+            "cpuUsage": 0.0006507805084486262,
+            "ramUsage": 0.015625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 14476,
+            "killToken": 4294981772,
+            "name": "WinStore.App",
+            "cpuUsage": 0,
+            "ramUsage": 34.37890625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 16440,
+            "killToken": 4294983736,
+            "name": "electron",
+            "cpuUsage": 0,
+            "ramUsage": 26.07421875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2012,
+            "killToken": 4294969308,
+            "name": "WUDFHost",
+            "cpuUsage": 0,
+            "ramUsage": 1.3671875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4112,
+            "killToken": 4294971408,
+            "name": "ROGLiveService",
+            "cpuUsage": 0,
+            "ramUsage": 4.53125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 960,
+            "killToken": 4294968256,
+            "name": "csrss",
+            "cpuUsage": 0.0013015610168972524,
+            "ramUsage": 1.203125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 15808,
+            "killToken": 4294983104,
+            "name": "platformio",
+            "cpuUsage": 0,
+            "ramUsage": 0.63671875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2088,
+            "killToken": 4294969384,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 3.70703125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1064,
+            "killToken": 4294968360,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 6.92578125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4220,
+            "killToken": 4294971516,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.109375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 9000,
+            "killToken": 4294976296,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 0.87890625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 15736,
+            "killToken": 4294983032,
+            "name": "conhost",
+            "cpuUsage": 0,
+            "ramUsage": 5.85546875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 13668,
+            "killToken": 4294980964,
+            "name": "Dropbox",
+            "cpuUsage": 0,
+            "ramUsage": 206.390625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 5760,
+            "killToken": 4294973056,
+            "name": "taskhostw",
+            "cpuUsage": 0,
+            "ramUsage": 3.3359375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4992,
+            "killToken": 4294972288,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 12888,
+            "killToken": 4294980184,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.671875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1920,
+            "killToken": 4294969216,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 2.09765625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6176,
+            "killToken": 4294973472,
+            "name": "MicrosoftEdge",
+            "cpuUsage": 0,
+            "ramUsage": 0.1484375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2484,
+            "killToken": 4294969780,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.734375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1612,
+            "killToken": 4294968908,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.1328125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 13076,
+            "killToken": 4294980372,
+            "name": "RuntimeBroker",
+            "cpuUsage": 0,
+            "ramUsage": 1.6640625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 11676,
+            "killToken": 4294978972,
+            "name": "Steam",
+            "cpuUsage": 0,
+            "ramUsage": 28.078125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 15660,
+            "killToken": 4294982956,
+            "name": "python",
+            "cpuUsage": 0,
+            "ramUsage": 19.1171875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2540,
+            "killToken": 4294969836,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.12890625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 11788,
+            "killToken": 4294979084,
+            "name": "Calculator",
+            "cpuUsage": 0,
+            "ramUsage": 0.12109375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 12056,
+            "killToken": 4294979352,
+            "name": "dllhost",
+            "cpuUsage": 0,
+            "ramUsage": 2.6640625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 12540,
+            "killToken": 4294979836,
+            "name": "RadeonSoftware",
+            "cpuUsage": 0,
+            "ramUsage": 27.79296875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3320,
+            "killToken": 4294970616,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 9.1953125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3888,
+            "killToken": 4294971184,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.01171875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 816,
+            "killToken": 4294968112,
+            "name": "csrss",
+            "cpuUsage": 0,
+            "ramUsage": 1.1015625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1804,
+            "killToken": 4294969100,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.09765625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1572,
+            "killToken": 4294968868,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 5.3828125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 5936,
+            "killToken": 4294973232,
+            "name": "ArmourySocketServer",
+            "cpuUsage": 0,
+            "ramUsage": 0.50390625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1940,
+            "killToken": 4294969236,
+            "name": "WindowsInternal.ComposableShell.Experiences.TextInput.InputApp",
+            "cpuUsage": 0,
+            "ramUsage": 7.46484375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6912,
+            "killToken": 4294974208,
+            "name": "unsecapp",
+            "cpuUsage": 0,
+            "ramUsage": 1.01171875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 952,
+            "killToken": 4294968248,
+            "name": "wininit",
+            "cpuUsage": 0,
+            "ramUsage": 1.00390625,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 15600,
+            "killToken": 4294982896,
+            "name": "conhost",
+            "cpuUsage": 0,
+            "ramUsage": 5.85546875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 1128,
+            "killToken": 4294968424,
+            "name": "fontdrvhost",
+            "cpuUsage": 0,
+            "ramUsage": 7,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3356,
+            "killToken": 4294970652,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.43359375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 5860,
+            "killToken": 4294973156,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.51171875,
+            "sentBps": 0,
+            "receivedBps": 167,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2800,
+            "killToken": 4294970096,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 3.08203125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 2100,
+            "killToken": 4294969396,
+            "name": "conhost",
+            "cpuUsage": 0,
+            "ramUsage": 0.85546875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 11668,
+            "killToken": 4294978964,
+            "name": "cam_helper",
+            "cpuUsage": 0.0006507805084486262,
+            "ramUsage": 12.9375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 3380,
+            "killToken": 4294970676,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 0.91796875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 4028,
+            "killToken": 4294971324,
+            "name": "AsusUpdateCheck",
+            "cpuUsage": 0,
+            "ramUsage": 1.7109375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 10052,
+            "killToken": 4294977348,
+            "name": "MicrosoftEdgeSH",
+            "cpuUsage": 0,
+            "ramUsage": 1.59375,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 14416,
+            "killToken": 4294981712,
+            "name": "conhost",
+            "cpuUsage": 0,
+            "ramUsage": 0.85546875,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        },
+        {
+            "id": 6452,
+            "killToken": 4294973748,
+            "name": "svchost",
+            "cpuUsage": 0,
+            "ramUsage": 1.98828125,
+            "sentBps": 0,
+            "receivedBps": 0,
+            "gpuUsage": 0
+        }
+    ],
+    "monitors": [
+        {
+            "resolution": {
+                "width": 3840,
+                "height": 1080
+            },
+            "manufacturer": "Samsung",
+            "manufacturerCode": "SAM",
+            "model": "C49J89x"
+        }
+    ],
+    "timestamp": "2020-01-11T20:48:08.594Z"
+}
