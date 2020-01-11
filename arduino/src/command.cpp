@@ -88,7 +88,7 @@ void Command_Check() {
     if (Serial.available() > 0) {
         String inputStr = Serial.readString();
         serialBuffer += inputStr;
-    }    
+    }   
 
     int newLineIndex = serialBuffer.indexOf('\n');
     while (serialBuffer.length() != 0 && newLineIndex > 0) {
@@ -103,5 +103,6 @@ void Command_Check() {
         }
         
         serialBuffer = serialBuffer.substring(newLineIndex + 1);
+        newLineIndex = serialBuffer.indexOf('\n');
     }
 }
