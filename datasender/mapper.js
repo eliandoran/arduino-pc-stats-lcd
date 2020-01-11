@@ -2,7 +2,8 @@ const config = require("./mapping.json");
 const objectPath = require("object-path");
 
 const typeMappings = {
-    "int": Math.round
+    "int": Math.round,
+    "intPercentage": (val) => Math.round(val * 100)
 };
 
 function map(data) {

@@ -10,5 +10,17 @@
     "motherboard.temperature.current": {
         "id": 2,
         "type": "int"
+    },
+    "cpus.0.usage": {
+        "id": 3,
+        "type": "intPercentage"
+    },
+    "cpus.0.freq.current": {
+        "id": 4,
+        "type": "int"
+    },
+    "cpus.0.fanSpeed.current": {
+        "id": 5,
+        "type": "int"
     }
 }
