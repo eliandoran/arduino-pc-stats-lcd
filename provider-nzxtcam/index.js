@@ -15,6 +15,21 @@ monitor.on('initialized', (refresh) => {
 
 monitor.on('refresh', (refresh) => {
     const pc = refresh.pc
-    console.log("hardware info at ", pc.timestamp, ": ", pc);
+    const data = {};
+
+    data.cpus = pc.cpus.map((cpu) => {
+        return {
+            usage: cpu.load,
+            freq: {
+                min: cpu.minFrequency,
+                max: cpu.maxFrequency,
+                current: cpu.frequency
+            }
+        };
+    });
+
+    console.log(data);
+
     require("fs").writeFile("D:\\Projects\\Arduino PC Stats LCD\\provider-nzxtcam\\data.json", JSON.stringify(pc, null, 4), () => {});
+    require("fs").writeFile("D:\\Projects\\Arduino PC Stats LCD\\provider-nzxtcam\\parsed.json", JSON.stringify(data, null, 4), () => {});
 })
