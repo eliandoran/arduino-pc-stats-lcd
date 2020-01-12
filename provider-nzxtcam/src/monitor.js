@@ -18,7 +18,7 @@ function start() {
             hotkeysOK &= globalShortcut.register("Super+[", () => {
                 commandSender.goToPrevPage();
             });
-            
+
             hotkeysOK &= globalShortcut.register("Super+]", () => {
                 commandSender.goToNextPage();
             });
@@ -31,9 +31,7 @@ function start() {
         monitor.on('refresh', (refresh) => {
             const pc = refresh.pc
             const data = parse(pc);
-            
-            require("fs").writeFile("D:\\Projects\\Arduino PC Stats LCD\\provider-nzxtcam\\data.json", JSON.stringify(pc, null, 4), () => {});
-            require("fs").writeFile("D:\\Projects\\Arduino PC Stats LCD\\provider-nzxtcam\\parsed.json", JSON.stringify(data, null, 4), () => {});        
+                 
             console.log("data:", new Date());
             sender.sendData(data);
         });
