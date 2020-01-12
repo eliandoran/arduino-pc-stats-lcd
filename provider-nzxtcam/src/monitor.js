@@ -8,7 +8,7 @@ const { globalShortcut } = require("electron");
 function start() {
     const sender = new DataSender();
 
-    sender.start(() => {
+    sender.on("ready", () => {
         monitor.on('initialized', (refresh) => {
             const pc = refresh.pc;
             const commandSender = sender.getCommandSender();
@@ -35,7 +35,13 @@ function start() {
             console.log("data:", new Date());
             sender.sendData(data);
         });
-    });    
+    });
+
+    sender.on("data", (data) => {
+        console.log("<", data);
+    });
+
+    sender.start();
 }
 
 module.exports = start;
