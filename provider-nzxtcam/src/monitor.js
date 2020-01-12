@@ -1,9 +1,10 @@
+const chalk = require("chalk");
+const DataSender = require("datasender");
+const { globalShortcut } = require("electron");
+
 const {monitor} = require('../dist/lib').getCore();
 const parse = require("./parser");
 
-const DataSender = require("datasender");
-
-const { globalShortcut } = require("electron");
 
 function start() {
     const sender = new DataSender();
@@ -38,11 +39,11 @@ function start() {
     });
 
     sender.on("read", (data) => {
-        console.log("<", data.trimRight());
+        console.log(chalk.blue("<", data.trimRight()));
     });
 
     sender.on("write", (data) => {
-        console.log(">", data.trimRight());
+        console.log(chalk.yellow(">", data.trimRight()));
     });
 
     sender.start();
