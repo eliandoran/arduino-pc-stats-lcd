@@ -21,7 +21,7 @@ class CommandSender {
 
     processQueueInterval() {
         let output = this.queue.shift();
-        console.log("send:", output);        
+        console.log(">", output.trimRight());  
         this.port.write(output);
 
         if (this.queue.length == 0) {

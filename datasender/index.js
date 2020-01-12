@@ -21,7 +21,7 @@ class DataSender {
         
         parser.on("data", (data) => {
             data = data.toString("utf8").trim();    
-            console.log("recv:", data);
+            console.log("<", data);
         
             if (data == "Ready.") {
                 console.timeEnd("connect");
