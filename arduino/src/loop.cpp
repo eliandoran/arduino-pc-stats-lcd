@@ -5,8 +5,8 @@
 #include "loop.h"
 
 #define LOOP_DEFAULT_INTERVAL 500
-#define LOOP_INNER_DELAY 5
-//#define LOOP_TRACE_UPDATES
+#define LOOP_INNER_DELAY 0
+#define LOOP_TRACE_UPDATES
 
 void (*currentPage)(bool) = NULL;
 int currentInterval = LOOP_DEFAULT_INTERVAL;
@@ -48,7 +48,8 @@ void Loop_Enter() {
 
             #ifdef LOOP_TRACE_UPDATES
             int duration = (int)(millis() - startTime);
-            TRACE_VAL(String("[LOOP] Update at ") + millis() + " in " + duration);
+            long now = millis();
+            TRACE_VAL(String("[LOOP] Update at ") + now + " in " + duration + " after " + (now - lastUpdateTime) + " initialized: " + initialized);
             #endif
 
             initialized = true;
@@ -56,8 +57,13 @@ void Loop_Enter() {
         }
 
         // Check if there are any updates on the serial port.
+        long startTime = millis();
         Command_Check();
+        int duration = (int)(millis() - startTime);
+        if (duration > 10) {
+            TRACE_VAL(String("[LOOP] Command check took ") + (millis() - startTime));
+        }
 
-        delay(LOOP_INNER_DELAY);
+        //delay(LOOP_INNER_DELAY);
     }
 }
