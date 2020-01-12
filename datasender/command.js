@@ -33,6 +33,14 @@ class CommandSender {
     setRegister(id, value) {
         this.queueCommand("s", id, value);
     }
+
+    goToNextPage() {
+        this.queueCommand("n");
+    }
+
+    goToPrevPage() {
+        this.queueCommand("p");
+    }
     
 }
 

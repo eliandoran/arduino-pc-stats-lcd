@@ -43,6 +43,11 @@ class DataSender {
             this.lastData[id] = value;
         }
     }
+
+    getCommandSender() {
+        return this.command;        
+    }
+    
 }
 
 module.exports = DataSender;

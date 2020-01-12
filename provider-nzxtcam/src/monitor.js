@@ -3,13 +3,29 @@ const parse = require("./parser");
 
 const DataSender = require("datasender");
 
+const { globalShortcut } = require("electron");
+
 function start() {
     const sender = new DataSender();
 
     sender.start(() => {
         monitor.on('initialized', (refresh) => {
-            const pc = refresh.pc
+            const pc = refresh.pc;
+            const commandSender = sender.getCommandSender();
             console.log("hardware monitor loaded, initial values: ", pc)
+
+            let hotkeysOK = true;
+            hotkeysOK &= globalShortcut.register("Super+[", () => {
+                commandSender.goToPrevPage();
+            });
+            
+            hotkeysOK &= globalShortcut.register("Super+]", () => {
+                commandSender.goToNextPage();
+            });
+                    
+            if (!hotkeysOK) {
+                console.error("Registration failed.");
+            }            
         })
     
         monitor.on('refresh', (refresh) => {
