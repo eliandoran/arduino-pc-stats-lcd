@@ -20,13 +20,13 @@ void Screen_Component_Detail(bool initialized, int componentIndex,
         lastUsage[componentIndex] = -1;
         lastFreq[componentIndex] = -1;
         lastFan[componentIndex] = -1;
+
+        LCD_Print(COMPONENT_NAMES[componentIndex], 1, 0);
     }
     
     int curUsage = Registry_GetValue(usageRegister);
     int curFreq = Registry_GetValue(freqRegister);
-    int curFan = Registry_GetValue(fanRegister);
-    
-    LCD_Print(COMPONENT_NAMES[componentIndex], 1, 0);
+    int curFan = Registry_GetValue(fanRegister);    
 
     if (curUsage != lastUsage[componentIndex]) {
         bool hasUsage = Registry_IsSet(usageRegister);
