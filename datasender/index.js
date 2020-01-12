@@ -20,7 +20,9 @@ class DataSender extends EventEmitter {
         });
          
         const parser = port.pipe(new Readline());
-        this.command = new CommandSender(port);
+        this.command = new CommandSender(port, (data) => {
+            this.emit("write", data);
+        });
         
         parser.on("data", (data) => {
             data = data.toString("utf8").trim();                
@@ -29,7 +31,7 @@ class DataSender extends EventEmitter {
                 console.timeEnd("connect");
                 this.emit("ready");
             } else {
-                this.emit("data", data);
+                this.emit("read", data);
             }
         });
     }

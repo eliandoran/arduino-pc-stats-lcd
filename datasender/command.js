@@ -1,10 +1,11 @@
 const FLUSH_INTERVAL = 2;
 
 class CommandSender {
-    constructor(port) {
+    constructor(port, writeCallback) {
         this.port = port;
         this.queue = [];
         this.timer = null;
+        this.writeCallback = writeCallback;
     }
 
     queueCommand(command, ...args) {   
@@ -15,14 +16,17 @@ class CommandSender {
 
     processQueue() {
         if (this.timer === null) {
-            this.timer = setInterval(this.processQueueInterval.bind(this), FLUSH_INTERVAL);
+            this.timer = setInterval(this.processQueueInterval.bind(this), FLUSH_INTERVAL);            
         }
     }
 
     processQueueInterval() {
-        let output = this.queue.shift();
-        console.log(">", output.trimRight());  
+        let output = this.queue.shift();        
         this.port.write(output);
+
+        if (this.writeCallback != null) {
+            this.writeCallback(output);
+        }
 
         if (this.queue.length == 0) {
             clearInterval(this.timer);

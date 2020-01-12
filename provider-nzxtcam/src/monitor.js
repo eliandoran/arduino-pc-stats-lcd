@@ -37,8 +37,12 @@ function start() {
         });
     });
 
-    sender.on("data", (data) => {
-        console.log("<", data);
+    sender.on("read", (data) => {
+        console.log("<", data.trimRight());
+    });
+
+    sender.on("write", (data) => {
+        console.log(">", data.trimRight());
     });
 
     sender.start();
