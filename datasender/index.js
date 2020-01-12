@@ -13,7 +13,7 @@ class DataSender {
         console.time("connect");
 
         const port = new SerialPort("COM3", {
-            baudRate: 115200
+            baudRate: 345600
         });
          
         const parser = port.pipe(new Readline());
@@ -47,7 +47,7 @@ class DataSender {
     getCommandSender() {
         return this.command;        
     }
-    
+
 }
 
 module.exports = DataSender;

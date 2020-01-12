@@ -3,7 +3,7 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#define SERIAL_BAUDRATE 115200
+#define SERIAL_BAUDRATE 345600
 
 /*
  * Real Time Clock
