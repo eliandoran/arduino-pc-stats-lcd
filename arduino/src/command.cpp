@@ -10,10 +10,6 @@
 String serialBuffer;
 
 void Command_Exec(String** args, int numArgs) {
-    for (int i=0; i<numArgs; i++) {
-        TRACE_VAL(String("[COMMAND] Arg ") + *args[i]);
-    }
-
     String commandName = *args[0];
     if (commandName.equals(COMMAND_PAGE_NEXT)) {
         Navigator_GoNext();
