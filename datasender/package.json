@@ -9,7 +9,7 @@
   "author": "Elian Doran <doran.adoris.elian@gmail.com>",
   "license": "UNLICENSED",
   "dependencies": {
-    "object-path": "^0.11.4",
+    "object-path": "^0.11.8",
     "serialport": "^8.0.6"
   }
 }
